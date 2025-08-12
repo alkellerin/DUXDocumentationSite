@@ -15,7 +15,7 @@
 @import 'components/popups.css';
 
 /* Page-specific styles (minimal) */
-@import 'pages/home.css';
+@import 'pages/nav.css';
 @import 'pages/contact.css';
 
 /* Utilities */

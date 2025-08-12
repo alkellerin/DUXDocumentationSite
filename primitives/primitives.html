@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.typekit.net/hbi2boz.css">
+        <link rel="stylesheet" href="../styles/styles.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/css/foundation.min.css" crossorigin="anonymous">
+
+        <script src="https://unpkg.com/htmlincludejs"></script>
+        
+    </head>
+
+    <body>
+        <include src="topnav.html"></include>
+
+        <div class="grid-x">
+            <div class="cell medium-6 large-3 sidebarMenu">
+                <div class="sidebar-header">
+                    <p class="headingXL">Primitives</p>
+                </div>
+                <nav class="nav-menu">
+                    <button class="nav-item regular active grid-x" data-tab="nav2" data-has-dropdown="true"><p class="labelM">Typography<i class="ph ph-caret-up drop-down-sub size24"></i></p></button>
+                        <div class="sub-menu">
+                            <button class="nav-item sub" data-tab="sub1" data-parent="nav2"><p class="labelS">Heading styles</p></button>
+                            <button class="nav-item sub" data-tab="sub2" data-parent="nav2"><p class="labelS">Body styles</p></button>
+                            <button class="nav-item sub" data-tab="sub1" data-parent="nav2"><p class="labelS">Link styles</p></button>
+                            <button class="nav-item sub" data-tab="sub2" data-parent="nav2"><p class="labelS">Label styles</p></button>
+                            <button class="nav-item sub" data-tab="sub1" data-parent="nav2"><p class="labelS">Input styles</p></button>
+                        </div>
+                    <button class="nav-item regular" data-tab="nav3"><p class="labelM">Elevation</p></button>
+                    <button class="nav-item regular" data-tab="nav3"><p class="labelM">Spacing</p></button>
+                    <button class="nav-item regular" data-tab="nav3"><p class="labelM">Colors</p></button>
+                    <button class="nav-item regular" data-tab="nav3"><p class="labelM">Grids & Layouts</p></button>
+                </nav>
+            </div>
+
+            <div class="cell medium-6 large-9 selected-content">
+                <div id="nav1" class="content-section">Home content</div>
+                <div id="nav2" class="content-section hidden">Tab 2's content</div>
+                <div id="sub1" class="content-section hidden">Submenu 1 content</div>
+                <div id="sub2" class="content-section hidden">Submenu 2 content</div>
+                <div id="nav3" class="content-section hidden">Third tab</div>
+            </div>
+        </div>
+
+        <script src="sidenavigation.js" async defer></script>
+
+    </body>
+</html>
+
