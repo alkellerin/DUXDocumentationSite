@@ -1,0 +1,66 @@
+.exit-popup-icon {
+    float: right;
+}
+
+.popup-message {
+    padding: 16px;
+    background-color: var(--white);
+    border-radius: 8px;
+}
+
+.success-popup {
+    width: 22.5rem;
+    border: 2px solid var(--light-gray);
+    border-radius: 8px;
+}
+
+.success-tab {
+    background-color: var(--green80);
+    color: var(--green30);
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.error-popup {
+    width: 22.5rem;
+    border: 2px solid var(--light-gray);
+    border-radius: 8px;
+}
+
+.error-tab {
+    background-color: var(--red70);
+    color: var(--red30);
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+.warning-popup {
+    width: 22.5rem;
+    border: 2px solid var(--light-gray);
+    border-radius: 8px;
+}
+
+.warning-tab {
+    background-color: var(--lightest-yellow);
+    color: var(--darker-yellow);
+    align-items: center;
+    padding: 8px 16px;
+    border-radius: 8px 8px 0px 0px;
+}
+
+
+
+.warning-alert {
+    align-items: center;
+    background-color: var(--yellow);
+    color: var(--blue);
+    padding: 16px;
+    border-radius: 8px;
+}
+
+.warning-message {
+    display: inline-flex;
+    gap: 8px;
+}

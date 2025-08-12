@@ -1,0 +1,135 @@
+
+p {
+    margin-bottom: 0 !important;
+}
+
+/* FONT WEIGHTS --------------------------------------------------------*/
+.regular {
+    font-weight: 400;
+}
+
+.medium {
+    font-weight: 500;
+}
+
+.demi {
+    font-weight: 600;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+/* HEADINGS --------------------------------------------------------*/
+:root {
+    --font-family: "Greycliff CF", sans-serif;
+}
+
+.headingXXXL {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 60px;
+}
+
+.headingXXL {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 45px;
+}
+
+.headingXL {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 36px;
+}
+
+.headingL {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.headingM {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.headingS {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+}
+
+/* BODY --------------------------------------------------------*/
+.bodyL {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.bodyM {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+.bodyS {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.bodyXS {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+}
+
+/* LINK --------------------------------------------------------*/
+.linkL {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.linkM {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+    text-decoration: underline;
+}
+
+.linkS {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+/* LABEL --------------------------------------------------------*/
+.labelM {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.labelS {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.labelXS {
+    font-family: var(--font-family);
+    font-weight: 600;
+    font-size: 12px;
+}
+
+/* INPUT --------------------------------------------------------*/
+.inputM {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+}

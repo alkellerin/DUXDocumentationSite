@@ -1,0 +1,158 @@
+* {
+   
+}
+
+/* Foundation Grid Base Styles */
+.grid-container {
+    max-width: 1920px;
+    margin: 0 auto;
+    padding: 0 0.9375rem;
+}
+
+.grid-x {
+    display: flex;
+    flex-flow: row wrap;
+    margin-left: -0.625rem;
+    margin-right: -0.625rem;
+}
+
+.cell {
+    flex: 0 0 auto;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    min-height: 0.0625rem;
+}
+
+/* Small screens (default) */
+.small-1 { flex: 0 0 8.33333%; }
+.small-2 { flex: 0 0 16.66667%; }
+.small-3 { flex: 0 0 25%; }
+.small-4 { flex: 0 0 33.33333%; }
+.small-6 { flex: 0 0 50%; }
+.small-8 { flex: 0 0 66.66667%; }
+.small-12 { flex: 0 0 100%; }
+
+/* Medium screens */
+@media screen and (min-width: 640px) {
+    .medium-1 { flex: 0 0 8.33333%; }
+    .medium-2 { flex: 0 0 16.66667%; }
+    .medium-3 { flex: 0 0 25%; }
+    .medium-4 { flex: 0 0 33.33333%; }
+    .medium-6 { flex: 0 0 50%; }
+    .medium-8 { flex: 0 0 66.66667%; }
+    .medium-12 { flex: 0 0 100%; }
+}
+
+/* Large screens */
+@media screen and (min-width: 1024px) {
+    .large-1 { flex: 0 0 8.33333%; }
+    .large-2 { flex: 0 0 16.66667%; }
+    .large-3 { flex: 0 0 25%; }
+    .large-4 { flex: 0 0 33.33333%; }
+    .large-6 { flex: 0 0 50%; }
+    .large-8 { flex: 0 0 66.66667%; }
+    .large-12 { flex: 0 0 100%; }
+}
+
+/* Measurement Display Styles */
+.measurement-panel {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    background: white;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    z-index: 1000;
+    min-width: 250px;
+}
+
+.measurement-title {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 2px solid var(--yellow);
+    padding-bottom: 8px;
+}
+
+.measurement-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+    padding: 4px 0;
+}
+
+.measurement-label {
+    font-weight: 500;
+    color: #555;
+}
+
+.measurement-value {
+    color: var(--blue);
+}
+
+.current-breakpoint {
+    background-color: var(--background-color3);
+    border-left: 4px solid var(--blue);
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 4px;
+}
+
+/* Grid Visualization */
+.grid-cell {
+    background-color: var(--background-color3);
+    border: 1px solid var(--blue);
+    min-height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.grid-cell:hover {
+    background-color: var(--background-color4);
+    border-color: var(--darker-blue);
+}
+
+.cell-label {
+    font-size: 12px;
+    color: var(--blue);
+}
+
+.cell-measurement {
+    position: absolute;
+    top: -20px;
+    right: 5px;
+    font-size: 10px;
+    background: var(--yellow);
+    color: var(--blue);
+    padding: 2px 6px;
+    border-radius: 3px;
+}
+
+.section-title {
+    font-size: 24px;
+    font-weight: 700;
+    margin: 30px 0 20px 0;
+    color: var(--black);
+}
+
+.demo-section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+@media screen and (max-width: 639px) {
+    .measurement-panel {
+        position: static;
+        margin-bottom: 20px;
+        width: 100%;
+    }
+}
