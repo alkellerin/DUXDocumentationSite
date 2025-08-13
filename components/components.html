@@ -16,7 +16,7 @@
     </head>
 
     <body>
-        <include src="topnav.html"></include>
+        <include src="../topnav.html"></include>
 
         <div class="grid-x">
             <div class="cell medium-6 large-3 sidebarMenu">
@@ -24,60 +24,93 @@
                     <p class="headingXL">Components</p>
                 </div>
                 <nav class="nav-menu">
-                    <button class="nav-item regular active" data-tab="nav1"><p class="labelM">Nav 1</p></button>
-                    <button class="nav-item regular grid-x" data-tab="nav2" data-has-dropdown="true"><p class="labelM">Inputs<i class="ph ph-caret-up drop-down-sub size24"></i></p></button>
+                    <button class="nav-item regular grid-x" data-tab="inputs" data-has-dropdown="true"><p class="labelM">Inputs<i class="ph ph-caret-up drop-down-sub size24"></i></p></button>
                         <div class="sub-menu">
-                            <button class="nav-item sub" data-tab="sub1" data-parent="nav2"><p class="labelS">Button</p></button>
-                            <button class="nav-item sub" data-tab="sub2" data-parent="nav2"><p class="labelS">Checkbox</p></button>
-                            <button class="nav-item sub" data-tab="sub2" data-parent="nav2"><p class="labelS">Datepicker</p></button>
-                            <button class="nav-item sub" data-tab="sub2" data-parent="nav2"><p class="labelS">Radio</p></button>
-                            <button class="nav-item sub" data-tab="sub2" data-parent="nav2"><p class="labelS">Slider</p></button>
-                            <button class="nav-item sub" data-tab="sub2" data-parent="nav2"><p class="labelS">Text field</p></button>
-                            <button class="nav-item sub" data-tab="sub2" data-parent="nav2"><p class="labelS">Toggle</p></button>
+                            <button class="nav-item sub" data-tab="inputs-buttons" data-parent="inputs"><p class="labelS">Buttons</p></button>
+                            <button class="nav-item sub" data-tab="inputs-checkbox" data-parent="inputs"><p class="labelS">Checkbox</p></button>
+                            <button class="nav-item sub" data-tab="inputs-datepicker" data-parent="inputs"><p class="labelS">Datepicker</p></button>
+                            <button class="nav-item sub" data-tab="inputs-radio" data-parent="inputs"><p class="labelS">Radio</p></button>
+                            <button class="nav-item sub" data-tab="inputs-slider" data-parent="inputs"><p class="labelS">Slider</p></button>
+                            <button class="nav-item sub" data-tab="inputs-textfield" data-parent="inputs"><p class="labelS">Text field</p></button>
+                            <button class="nav-item sub" data-tab="inputs-toggle" data-parent="inputs"><p class="labelS">Toggle</p></button>
                         </div>
-                    <button class="nav-item regular grid-x" data-tab="nav2" data-has-dropdown="true"><p class="labelM">Content<i class="ph ph-caret-up drop-down-sub size24"></i></p></button>
+                    <button class="nav-item regular grid-x" data-tab="content" data-has-dropdown="true"><p class="labelM">Content<i class="ph ph-caret-up drop-down-sub size24"></i></p></button>
                         <div class="sub-menu">
-                            <button class="nav-item sub" data-tab="sub1" data-parent="nav2"><p class="labelS">Accordion</p></button>
-                            <button class="nav-item sub" data-tab="sub2" data-parent="nav2"><p class="labelS">Avatar</p></button>
-                            <button class="nav-item sub" data-tab="sub2" data-parent="nav2"><p class="labelS">Cards</p></button>
-                            <button class="nav-item sub" data-tab="sub2" data-parent="nav2"><p class="labelS">Footer</p></button>
-                            <button class="nav-item sub" data-tab="sub2" data-parent="nav2"><p class="labelS">Header</p></button>
-                            <button class="nav-item sub" data-tab="sub2" data-parent="nav2"><p class="labelS">Menu</p></button>
-                            <button class="nav-item sub" data-tab="sub2" data-parent="nav2"><p class="labelS">Navbar</p></button>
+                            <button class="nav-item sub" data-tab="content-accordion" data-parent="content"><p class="labelS">Accordion</p></button>
+                            <button class="nav-item sub" data-tab="content-avatar" data-parent="content"><p class="labelS">Avatar</p></button>
+                            <button class="nav-item sub" data-tab="content-cards" data-parent="content"><p class="labelS">Cards</p></button>
+                            <button class="nav-item sub" data-tab="content-footer" data-parent="content"><p class="labelS">Footer</p></button>
+                            <button class="nav-item sub" data-tab="content-header" data-parent="content"><p class="labelS">Header</p></button>
+                            <button class="nav-item sub" data-tab="content-menu" data-parent="content"><p class="labelS">Menu</p></button>
+                            <button class="nav-item sub" data-tab="content-navbar" data-parent="content"><p class="labelS">Navbar</p></button>
                         </div>
-                    <button class="nav-item regular grid-x" data-tab="nav2" data-has-dropdown="true"><p class="labelM">Tables<i class="ph ph-caret-up drop-down-sub size24"></i></p></button>
-                    <button class="nav-item regular grid-x" data-tab="nav2" data-has-dropdown="true"><p class="labelM">Navigation<i class="ph ph-caret-up drop-down-sub size24"></i></p></button>
+                    <button class="nav-item regular grid-x" data-tab="tables" data-has-dropdown="true"><p class="labelM">Tables<i class="ph ph-caret-up drop-down-sub size24"></i></p></button>
                         <div class="sub-menu">
-                            <button class="nav-item sub" data-tab="sub2" data-parent="nav2"><p class="labelS">Navbar</p></button>
-                            <button class="nav-item sub" data-tab="sub2" data-parent="nav2"><p class="labelS">Side Nav</p></button>
-                            <button class="nav-item sub" data-tab="sub2" data-parent="nav2"><p class="labelS">Tabs</p></button>
+                            <button class="nav-item sub" data-tab="tables-data" data-parent="navigation"><p class="labelS">Data Table</p></button>
                         </div>
-                    <button class="nav-item regular grid-x" data-tab="nav2" data-has-dropdown="true"><p class="labelM">Progess & Validation<i class="ph ph-caret-up drop-down-sub size24"></i></p></button>
+
+                    <button class="nav-item regular grid-x" data-tab="navigation" data-has-dropdown="true"><p class="labelM">Navigation<i class="ph ph-caret-up drop-down-sub size24"></i></p></button>
                         <div class="sub-menu">
-                            <button class="nav-item sub" data-tab="sub2" data-parent="nav2"><p class="labelS">Badge</p></button>
-                            <button class="nav-item sub" data-tab="sub2" data-parent="nav2"><p class="labelS">Feedback</p></button>
-                            <button class="nav-item sub" data-tab="sub2" data-parent="nav2"><p class="labelS">Notification</p></button>
-                            <button class="nav-item sub" data-tab="sub2" data-parent="nav2"><p class="labelS">Progess Bar</p></button>
+                            <button class="nav-item sub" data-tab="navigation-navbar" data-parent="navigation"><p class="labelS">Navbar</p></button>
+                            <button class="nav-item sub" data-tab="navigation-sidenav" data-parent="navigation"><p class="labelS">Side Nav</p></button>
+                            <button class="nav-item sub" data-tab="navigation-tabs" data-parent="navigation"><p class="labelS">Tabs</p></button>
                         </div>
-                    <button class="nav-item regular grid-x" data-tab="nav2" data-has-dropdown="true"><p class="labelM">Surfaces<i class="ph ph-caret-up drop-down-sub size24"></i></p></button>
+                    <button class="nav-item regular grid-x" data-tab="progress" data-has-dropdown="true"><p class="labelM">Progess & Validation<i class="ph ph-caret-up drop-down-sub size24"></i></p></button>
                         <div class="sub-menu">
-                            <button class="nav-item sub" data-tab="sub2" data-parent="nav2"><p class="labelS">Cards</p></button>
-                            <button class="nav-item sub" data-tab="sub2" data-parent="nav2"><p class="labelS">Modal</p></button>
-                            <button class="nav-item sub" data-tab="sub2" data-parent="nav2"><p class="labelS">Tooltip</p></button>
+                            <button class="nav-item sub" data-tab="progress-badge" data-parent="progress"><p class="labelS">Badge</p></button>
+                            <button class="nav-item sub" data-tab="progress-feedback" data-parent="progress"><p class="labelS">Feedback</p></button>
+                            <button class="nav-item sub" data-tab="progress-notification" data-parent="progress"><p class="labelS">Notification</p></button>
+                            <button class="nav-item sub" data-tab="progress-progressbar" data-parent="progress"><p class="labelS">Progess Bar</p></button>
+                        </div>
+                    <button class="nav-item regular grid-x" data-tab="surfaces" data-has-dropdown="true"><p class="labelM">Surfaces<i class="ph ph-caret-up drop-down-sub size24"></i></p></button>
+                        <div class="sub-menu">
+                            <button class="nav-item sub" data-tab="surfaces-cards" data-parent="surfaces"><p class="labelS">Cards</p></button>
+                            <button class="nav-item sub" data-tab="surfaces-modal" data-parent="surfaces"><p class="labelS">Modal</p></button>
+                            <button class="nav-item sub" data-tab="surfaces-tooltip" data-parent="surfaces"><p class="labelS">Tooltip</p></button>
                         </div>
                 </nav>
             </div>
 
             <div class="cell medium-6 large-9 selected-content">
-                <div id="nav1" class="content-section">Home content</div>
-                <div id="nav2" class="content-section hidden">Tab 2's content</div>
-                <div id="sub1" class="content-section hidden">Submenu 1 content</div>
-                <div id="sub2" class="content-section hidden">Submenu 2 content</div>
-                <div id="nav3" class="content-section hidden">Third tab</div>
+                <div id="inputs" class="content-section"><include src="topnav.html"></include></div>
+                    <div id="inputs-buttons" class="content-section hidden"><include src="inputs/topnav.html"></include></div>
+                    <div id="inputs-checkbox" class="content-section hidden"><include src="inputs/topnav.html"></include></div>
+                    <div id="inputs-datepicker" class="content-section hidden"><include src="inputs/topnav.html"></include></div>
+                    <div id="inputs-radio" class="content-section hidden"><include src="inputs/topnav.html"></include></div>
+                    <div id="inputs-slider" class="content-section hidden"><include src="inputs/topnav.html"></include></div>
+                    <div id="inputs-textfield" class="content-section hidden"><include src="inputs/topnav.html"></include></div>
+                    <div id="inputs-toggle" class="content-section hidden"><include src="inputs/topnav.html"></include></div>
+
+                <div id="content" class="content-section"><include src="topnav.html"></include></div>
+                    <div id="content-accordion" class="content-section hidden"><include src="content/accordion.html"></include></div>
+                    <div id="content-avatar" class="content-section hidden"><include src="content/avatar.html"></include></div>
+                    <div id="content-cards" class="content-section hidden"><include src="content/cards.html"></include></div>
+                    <div id="content-footer" class="content-section hidden"><include src="content/footer.html"></include></div>
+                    <div id="content-header" class="content-section hidden"><include src="content/header.html"></include></div>
+                    <div id="content-menu" class="content-section hidden"><include src="content/menu.html"></include></div>
+
+                <div id="tables" class="content-section hidden"><include src="tables/topnav.html"></include></div>
+                    <div id="tables-data" class="content-section hidden"><include src="tables/data.html"></include></div>
+
+                <div id="navigation" class="content-section"><include src="topnav.html"></include></div>
+                    <div id="navigation-navbar" class="content-section hidden"><include src="navigation/navbar.html"></include></div>
+                    <div id="naviation-sidenav" class="content-section hidden"><include src="navigation/sidenav.html"></include></div>
+                    <div id="navigation-tabs" class="content-section hidden"><include src="navigation/tabs.html"></include></div>
+                
+                <div id="progress" class="content-section"><include src="progress/topnav.html"></include></div>
+                    <div id="progress-badge" class="content-section hidden"><include src="progress/badge.html"></include></div>
+                    <div id="progress-feedback" class="content-section hidden"><include src="progress/feedback.html"></include></div>
+                    <div id="progress-notification" class="content-section hidden"><include src="progress/notification.html"></include></div>
+                    <div id="progress-progressbar" class="content-section hidden"><include src="progress/progressbar.html"></include></div>
+                
+                <div id="surfaces" class="content-section"><include src="surfaces/topnav.html"></include></div>
+                    <div id="surfaces-cards" class="content-section hidden"><include src="surfaces/cards.html"></include></div>
+                    <div id="surfaces-modal" class="content-section hidden"><include src="surfaces/modal.html"></include></div>
+                    <div id="surfaces-tooltip" class="content-section hidden"><include src="surfaces/tooltip.html"></include></div>
             </div>
         </div>
 
-        <script src="sidenavigation.js" async defer></script>
+        <!-- <script src="sidenavigation.js" async defer></script> -->
 
     </body>
 </html>
