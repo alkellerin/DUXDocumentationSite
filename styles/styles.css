@@ -29,7 +29,9 @@
 
 .example {
     padding: 2rem 4rem;
-    background-color: var(--background-color2);
+    margin-bottom: 1rem;
+    background-color: var(--bg-subtle);
+    border-radius: 8px;
 }
 
 .code {

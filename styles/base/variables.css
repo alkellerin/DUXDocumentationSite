@@ -152,7 +152,7 @@ body {
 	--bg-danger: var(--light-red-700);
 	--bg-gray-gray-subtler-hover: var(--light-gray-300);
 	--bg-warning-hover: var(--light-yellow-800);
-	--bg-gray-gray-subte-active: var(--light-gray-300);
+	--bg-gray-gray-subtle-active: var(--light-gray-300);
 	--bg-gray-gray-bold: var(--light-gray-1200);
 	--bg-gray-gray-bold-hover: var(--light-gray-1100);
 	--bg-danger-hover: var(--light-red-800);
