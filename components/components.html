@@ -9,6 +9,10 @@
         <link rel="stylesheet" href="../styles/styles.css">
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"/>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/css/foundation.min.css" crossorigin="anonymous">
 
         <script src="https://unpkg.com/htmlincludejs"></script>
@@ -18,7 +22,7 @@
     <body>
         <include src="../topnav.html"></include>
 
-        <div class="grid-x">
+        <!-- <div class="grid-x">
             <div class="cell medium-6 large-3 sidebarMenu">
                 <div class="sidebar-header">
                     <p class="headingXL">Components</p>
@@ -108,9 +112,96 @@
                     <div id="surfaces-modal" class="content-section hidden"><include src="surfaces/modal.html"></include></div>
                     <div id="surfaces-tooltip" class="content-section hidden"><include src="surfaces/tooltip.html"></include></div>
             </div>
+        </div> -->
+
+        <div class="grid-x">
+            <div class="cell medium-6 large-3 sidebarMenu">
+                <div class="sidebar-header">
+                    <p class="headingXL">Components</p>
+                </div>
+                <nav class="nav-menu">
+                    <div class="nav-item regular"><h4>INPUTS</h4></div>
+                        <div class="sub-menu">
+                            <button class="nav-item sub" data-tab="inputs-buttons"><h3>Buttons</h3></button>
+                            <button class="nav-item sub" data-tab="inputs-checkbox" data-parent="inputs"><h3>Checkbox</h3></button>
+                            <button class="nav-item sub" data-tab="inputs-datepicker" data-parent="inputs"><h3>Datepicker</h3></button>
+                            <button class="nav-item sub" data-tab="inputs-radio" data-parent="inputs"><h3>Radio</h3></button>
+                            <button class="nav-item sub" data-tab="inputs-slider" data-parent="inputs"><h3>Slider</h3></button>
+                            <button class="nav-item sub" data-tab="inputs-textfield" data-parent="inputs"><h3>Text field</h3></button>
+                            <button class="nav-item sub" data-tab="inputs-toggle" data-parent="inputs"><h3>Toggle</h3></button>
+                        </div>
+                    
+                    <div class="nav-item regular"><h4>CONTENT</h4></div>
+                        <div class="sub-menu">
+                            <button class="nav-item sub" data-tab="content-accordion" data-parent="content"><h3>Accordion</h3></button>
+                            <button class="nav-item sub" data-tab="content-avatar" data-parent="content"><h3>Avatar</h3></button>
+                            <button class="nav-item sub" data-tab="content-cards" data-parent="content"><h3>Cards</h3></button>
+                            <button class="nav-item sub" data-tab="content-footer" data-parent="content"><h3>Footer</h3></button>
+                            <button class="nav-item sub" data-tab="content-header" data-parent="content"><h3>Header</h3></button>
+                            <button class="nav-item sub" data-tab="content-menu" data-parent="content"><h3>Menu</h3></button>
+                            <button class="nav-item sub" data-tab="content-navbar" data-parent="content"><h3>Navbar</h3></button>
+                        </div>
+                    <div class="nav-item regular"><h4>TABLES</h4></div>
+                        <div class="sub-menu">
+                            <button class="nav-item sub" data-tab="tables-data" data-parent="navigation"><h3>Data Table</p></button>
+                        </div>
+
+                    <div class="nav-item regular"><h4>NAVIGATION</h4></div>
+                        <div class="sub-menu">
+                            <button class="nav-item sub" data-tab="navigation-navbar" data-parent="navigation"><h3>Navbar</h3></button>
+                            <button class="nav-item sub" data-tab="navigation-sidenav" data-parent="navigation"><h3>Side Nav</h3></button>
+                            <button class="nav-item sub" data-tab="navigation-tabs" data-parent="navigation"><h3>Tabs</h3></button>
+                        </div>
+                    <div class="nav-item regular"><h4>PROGRESS & VALIDATION</h4></div>
+                        <div class="sub-menu">
+                            <button class="nav-item sub" data-tab="progress-badge" data-parent="progress"><h3>Badge</h3></button>
+                            <button class="nav-item sub" data-tab="progress-feedback" data-parent="progress"><h3>Feedback</h3></button>
+                            <button class="nav-item sub" data-tab="progress-notification" data-parent="progress"><h3>Notification</h3></button>
+                            <button class="nav-item sub" data-tab="progress-progressbar" data-parent="progress"><h3>Progess Bar</h3></button>
+                        </div>
+                    <div class="nav-item regular"><h4>SURFACES</h4></div>
+                        <div class="sub-menu">
+                            <button class="nav-item sub" data-tab="surfaces-cards" data-parent="surfaces"><h3>Cards</h3></button>
+                            <button class="nav-item sub" data-tab="surfaces-modal" data-parent="surfaces"><h3>Modal</h3></button>
+                            <button class="nav-item sub" data-tab="surfaces-tooltip" data-parent="surfaces"><h3>Tooltip</h3></button>
+                        </div>
+                </nav>
+            </div>
+
+            <div class="cell medium-6 large-9 selected-content">
+                <div id="inputs-buttons" class="content-section hidden"><include src="inputs/buttons.html"></include></div>
+                <div id="inputs-checkbox" class="content-section hidden"><include src="inputs/checkbox.html"></include></div>
+                <div id="inputs-datepicker" class="content-section hidden"><include src="inputs/datepicker.html"></include></div>
+                <div id="inputs-radio" class="content-section hidden"><include src="inputs/radio.html"></include></div>
+                <div id="inputs-slider" class="content-section hidden"><include src="inputs/slider.html"></include></div>
+                <div id="inputs-textfield" class="content-section hidden"><include src="inputs/textfield.html"></include></div>
+                <div id="inputs-toggle" class="content-section hidden"><include src="inputs/toggle.html"></include></div>
+
+                <div id="content-accordion" class="content-section hidden"><include src="content/accordion.html"></include></div>
+                <div id="content-avatar" class="content-section hidden"><include src="content/avatar.html"></include></div>
+                <div id="content-cards" class="content-section hidden"><include src="content/cards.html"></include></div>
+                <div id="content-footer" class="content-section hidden"><include src="content/footer.html"></include></div>
+                <div id="content-header" class="content-section hidden"><include src="content/header.html"></include></div>
+                <div id="content-menu" class="content-section hidden"><include src="content/menu.html"></include></div>
+
+                <div id="tables-data" class="content-section hidden"><include src="tables/data.html"></include></div>
+
+                <div id="navigation-navbar" class="content-section hidden"><include src="navigation/navbar.html"></include></div>
+                <div id="navigation-sidenav" class="content-section hidden"><include src="navigation/sidenav.html"></include></div>
+                <div id="navigation-tabs" class="content-section hidden"><include src="navigation/tabs.html"></include></div>
+            
+                <div id="progress-badge" class="content-section hidden"><include src="progress/badge.html"></include></div>
+                <div id="progress-feedback" class="content-section hidden"><include src="progress/feedback.html"></include></div>
+                <div id="progress-notification" class="content-section hidden"><include src="progress/notification.html"></include></div>
+                <div id="progress-progressbar" class="content-section hidden"><include src="progress/progressbar.html"></include></div>
+            
+                <div id="surfaces-cards" class="content-section hidden"><include src="surfaces/cards.html"></include></div>
+                <div id="surfaces-modal" class="content-section hidden"><include src="surfaces/modal.html"></include></div>
+                <div id="surfaces-tooltip" class="content-section hidden"><include src="surfaces/tooltip.html"></include></div>
+            </div>
         </div>
 
-        <!-- <script src="sidenavigation.js" async defer></script> -->
+        <script src="../sidenavigation.js" async defer></script>
 
     </body>
 </html>

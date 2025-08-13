@@ -154,6 +154,7 @@ body {
 	--bg-warning-hover: var(--light-yellow-800);
 	--bg-gray-gray-subte-active: var(--light-gray-300);
 	--bg-gray-gray-bold: var(--light-gray-1200);
+	--bg-gray-gray-bold-hover: var(--light-gray-1100);
 	--bg-danger-hover: var(--light-red-800);
 	--bg-danger-subtlest: var(--light-red-100);
 	--bg-surface-surface-sunken: var(--light-gray-200);
@@ -171,6 +172,7 @@ body {
 	--border-success: var(--light-green-700);
 	--border-warning: var(--light-yellow-700);
 	--border-focus: var(--light-blue-600);
+	--border-brand-blue: var(--light-brand-blue-700);
 	--border-info: var(--light-blue-700);
 	--border-inverse: var(--light-gray-100);
 	--border-bold: var(--light-gray-1100);

@@ -22,4 +22,63 @@
 @import 'utilities/spacing.css';
 @import 'utilities/text.css';
 
+/* UNIVERSAL DOCUMENTATION STYLES */
+.documentation {
+    margin-top: 6rem;
+}
 
+.example {
+    padding: 2rem 4rem;
+    background-color: var(--background-color2);
+}
+
+.code {
+    padding: 2rem 4rem;
+    background-color: var(--background-color2);
+    border-left: var(--bg-warning-subtlest);
+}
+
+.tabs {
+  margin: 2rem auto;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.tab-buttons {
+  display: flex;
+  border-bottom: 2px solid #ccc;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 12px 16px;
+  background: none;
+  border: none;
+  border-bottom: 2px solid transparent;
+  cursor: pointer;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+.tab-btn:hover {
+  background-color: #f9f9f9;
+}
+
+.tab-btn.active {
+  border-bottom: 2px solid #1C2674;
+  font-weight: bold;
+  color: #1C2674;
+}
+
+.tab-content {
+  padding: 1rem;
+  border: 1px solid #eee;
+  border-top: none;
+}
+
+.tab-panel {
+  display: none;
+}
+
+.tab-panel.active {
+  display: block;
+}

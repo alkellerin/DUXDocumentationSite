@@ -226,15 +226,19 @@
     transition: transform 0.3s ease;
 }
 
-.sub-menu {
+/* .sub-menu {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.3s ease;
   }
   .sub-menu.show {
-    max-height: 500px; /* or whatever is enough to display its children */
+    max-height: 500px;  or whatever is enough to display its children 
   }
 
   .hidden {
     display: none;
-  }
+  } */
+
+.hidden {
+  display: none !important;
+}

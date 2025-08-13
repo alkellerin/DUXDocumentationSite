@@ -1,3 +1,33 @@
+h1 {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 24px !important;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 20px !important; 
+}
+
+h3 {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 16px !important;
+}
+
+h4 {
+    font-family: 'Inter', sans-serif !important;
+    font-weight: 700 !important;
+    font-size: 14px !important;
+}
+
+h5 {
+    font-family: 'Google Sans Code', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
+}
+
 
 p {
     margin-bottom: 0 !important;
