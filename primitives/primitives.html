@@ -16,7 +16,7 @@
     </head>
 
     <body>
-        <include src="topnav.html"></include>
+        <include src="../topnav.html"></include>
 
         <div class="grid-x">
             <div class="cell medium-6 large-3 sidebarMenu">
@@ -33,22 +33,20 @@
                             <button class="nav-item sub" data-tab="sub1" data-parent="nav2"><p class="labelS">Input styles</p></button>
                         </div>
                     <button class="nav-item regular" data-tab="nav3"><p class="labelM">Elevation</p></button>
-                    <button class="nav-item regular" data-tab="nav3"><p class="labelM">Spacing</p></button>
+                    <button class="nav-item regular" data-tab="spacing"><p class="labelM">Spacing</p></button>
                     <button class="nav-item regular" data-tab="nav3"><p class="labelM">Colors</p></button>
                     <button class="nav-item regular" data-tab="nav3"><p class="labelM">Grids & Layouts</p></button>
                 </nav>
             </div>
 
             <div class="cell medium-6 large-9 selected-content">
-                <div id="nav1" class="content-section">Home content</div>
-                <div id="nav2" class="content-section hidden">Tab 2's content</div>
-                <div id="sub1" class="content-section hidden">Submenu 1 content</div>
-                <div id="sub2" class="content-section hidden">Submenu 2 content</div>
-                <div id="nav3" class="content-section hidden">Third tab</div>
+                <div id="spacing" class="content-section hidden"><include src="spacing.html"></include></div>
+                <div id="inputs-checkbox" class="content-section hidden"><include src="inputs/checkbox.html"></include></div>
+                <div id="inputs-datepicker" class="content-section hidden"><include src="inputs/datepicker.html"></include></div>
             </div>
         </div>
 
-        <script src="sidenavigation.js" async defer></script>
+        <script src="../sidenavigation.js" async defer></script>
 
     </body>
 </html>
