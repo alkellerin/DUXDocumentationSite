@@ -7,6 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="https://use.typekit.net/hbi2boz.css">
         <link rel="stylesheet" href="../styles/navbar.css">
+        <link rel="stylesheet" href="../styles/styles.css">
         <link rel="stylesheet" href="../components/navigation.css">
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"/>
@@ -22,58 +23,15 @@
     </head>
 
     <body>
-        <div class="documentation">
+      <div class="documentation">
             <div class="example">
-<div class="faq-container row">
-        <p class="headingM">Frequently Asked Questions</p>
+                
 
-        <div class="faq-menu">
-
-          <div class="faq-item">
-            <div class="faq-question grid-x">
-              <div class="cell medium-6 large-10">
-                <p class="labelM">Question?</p>
-              </div>
-              <div class="cell medium-6 large-2">
-                <i class="ph ph-caret-down drop-down size24"></i>
-              </div>
-            </div>
-
-            <div class="faq-answer">
-              <p class="bodyM">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla 
-                pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
-              </p>
-            </div>
-          </div>
-
-          <div class="faq-item">
-            <div class="faq-question grid-x">
-              <div class="cell medium-6 large-10">
-                <p class="labelM">Question?</p>
-              </div>
-              <div class="cell medium-6 large-2">
-                <i class="ph ph-caret-down drop-down size24"></i>
-              </div>
-            </div>
-
-            <div class="faq-answer">
-              <p class="bodyM">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-              </p>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
             </div>
 
             <div class="tabs">
                 <div class="tab-buttons">
-                    <button class="tab-btn active" data-tab="tab1">Props</button>
+                    <button class="tab-btn active" data-tab="tab1">Properties</button>
                     <button class="tab-btn" data-tab="tab2">Anatomy</button>
                     <button class="tab-btn" data-tab="tab3">Code Snippet</button>
                 </div>
@@ -85,9 +43,13 @@
 
                         <h2><i class="ph ph-x"></i> When to Not Use</h2>
                         <h3>don't use</h3>
+
+                        <img src="./images/open_accordion.png">
+                        <img src="./images/state_accordion.png">
                     </div>
                     <div id="tab2" class="tab-panel">
-                        <p>Here are the features.</p>
+                      <img src="./images/anatomy_accordion.png">
+                      <img src="./images/layout_accordion.png">
                     </div>
                     <div id="tab3" class="tab-panel">
                         <p>Pricing details go here.</p>
@@ -95,35 +57,11 @@
                 </div>
             </div>
             
-        </div>   
+
+
+        </div>
 
         <script src="../sidenavigation.js" async defer></script>
-        
-        <!-- <script>
-            // FAQ Animation
-            const faqQuestions = document.querySelectorAll(".faq-question");
-
-            faqQuestions.forEach((question) => {
-            question.addEventListener("click", () => {
-                faqQuestions.forEach((item) => {
-                if (item !== question) {
-                    item.classList.remove("active");
-                    item.nextElementSibling.style.maxHeight = null;
-                }
-                });
-
-                question.classList.toggle("active");
-
-                const answer = question.nextElementSibling;
-
-                if (answer.style.maxHeight) {
-                answer.style.maxHeight = null;
-                } else {
-                answer.style.maxHeight = answer.scrollHeight + "px";
-                }
-            });
-            });
-        </script> -->
 
     </body>
     
