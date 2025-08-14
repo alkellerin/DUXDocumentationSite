@@ -43,7 +43,7 @@
 .example {
     padding: 2rem 4rem;
     margin-bottom: 1rem;
-    background-color: var(--bg-subtle);
+    background-color: #F2F2F2;
     border-radius: 8px;
 }
 
