@@ -47,10 +47,15 @@
     border-radius: 8px;
 }
 
-.code {
+.code_snippet {
+  margin-top: 2rem;
     padding: 2rem 4rem;
-    background-color: var(--background-color2);
+    background-color: #F2F2F2;
     border-left: var(--bg-warning-subtlest);
+    display: block;
+    font-family: 'Google Sans Code', sans-serif !important;
+    font-weight: 400 !important;
+    font-size: 14px !important;
 }
 
 .tabs {
