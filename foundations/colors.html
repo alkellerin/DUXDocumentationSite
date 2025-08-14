@@ -16,6 +16,7 @@
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/css/foundation.min.css" crossorigin="anonymous">
 
         <script src="https://unpkg.com/htmlincludejs"></script>
@@ -24,43 +25,37 @@
 
     <body>
         <div class="documentation">
-            <div class="example">
-
-            </div>
-
-            <div class="tabs">
-                <div class="tab-buttons">
-                    <button class="tab-btn active" data-tab="tab1">Properties</button>
-                    <button class="tab-btn" data-tab="tab2">Anatomy</button>
-                    <button class="tab-btn" data-tab="tab3">Code Snippet</button>
-                </div>
-
-                <div class="tab-content">
-                    <div id="tab1" class="tab-panel active">
-                        <h2><i class="ph ph-check"></i> When to Use</h2>
-                        <h3>use when</h3>
-
-                        <h2><i class="ph ph-x"></i> When to Not Use</h2>
-                        <h3>don't use</h3>
-
-                        <img src="./images/open_accordion.png">
-                        <img src="./images/state_accordion.png">
-                    </div>
-                    <div id="tab2" class="tab-panel">
-                        <img src="./images/anatomy_accordion.png">
-                    </div>
-                    <div id="tab3" class="tab-panel">
-                        <p>Pricing details go here.</p>
-                    </div>
-                </div>
+            <div class="intro">
+                <h1>Primitive Colors</h1>
+                <h3>Primitive colors are the tokens that map directly to CSS hex values.</h3>
             </div>
             
+            <div class="foundation_example">
+                <h1>Semantic Colors</h1>
+                <h3>Semantic colors are tokens play a fundamental semantic role in the Quest design language. They map to layer 1 primitive color tokens.</h3>
+            </div>
 
+            <div class="foundation_example">
+                <h1>How to use the colors</h1>
+                <h3>Our variables make it easy for matching colors with components. Each color variable has a corresponding component within it's name.
+                    Let's see how all of these colors come together.
+                </h3>
+                <img src="images/color_diagram.png">
+            </div>
 
-        </div>
+            <div class="foundation_example">
+                <h1>Variables</h1>
+                <img src="images/color_diagram.png">
+            </div>
 
-        <script src="../sidenavigation.js" async defer></script>
-
+            <div class="code_snippet">
+                <h1>Code</h1>
+                <div class="code_snippet_example">
+                    <pre><code><p class="headingXXXL">Page Title Here</p></code></pre>
+                </div>
+            </div>
+        </div> 
+        
     </body>
     
 </html>
