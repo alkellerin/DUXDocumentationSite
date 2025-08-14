@@ -24,25 +24,29 @@
                     <p class="headingXL">Primitives</p>
                 </div>
                 <nav class="nav-menu">
-                    <button class="nav-item regular active grid-x" data-tab="nav2" data-has-dropdown="true"><p class="labelM">Typography<i class="ph ph-caret-up drop-down-sub size24"></i></p></button>
+                    <button class="nav-item regular active grid-x" data-tab="nav2" data-has-dropdown="true"><h4>TYPOGRAPHY</h4></button>
                         <div class="sub-menu">
-                            <button class="nav-item sub" data-tab="sub1" data-parent="nav2"><p class="labelS">Heading styles</p></button>
-                            <button class="nav-item sub" data-tab="sub2" data-parent="nav2"><p class="labelS">Body styles</p></button>
-                            <button class="nav-item sub" data-tab="sub1" data-parent="nav2"><p class="labelS">Link styles</p></button>
-                            <button class="nav-item sub" data-tab="sub2" data-parent="nav2"><p class="labelS">Label styles</p></button>
-                            <button class="nav-item sub" data-tab="sub1" data-parent="nav2"><p class="labelS">Input styles</p></button>
+                            <button class="nav-item sub" data-tab="heading-styles" data-parent="nav2"><h3>Heading styles</h3></button>
+                            <button class="nav-item sub" data-tab="body-styles" data-parent="nav2"><h3>Body styles</h3></button>
+                            <button class="nav-item sub" data-tab="link-styles" data-parent="nav2"><h3>Link styles</h3></button>
+                            <button class="nav-item sub" data-tab="label-styles" data-parent="nav2"><h3>Label styles</h3></button>
+                            <button class="nav-item sub" data-tab="input-styles" data-parent="nav2"><h3>Input styles</h3></button>
                         </div>
-                    <button class="nav-item regular" data-tab="nav3"><p class="labelM">Elevation</p></button>
+                    <button class="nav-item regular" data-tab="elevation"><p class="labelM">Elevation</p></button>
                     <button class="nav-item regular" data-tab="spacing"><p class="labelM">Spacing</p></button>
-                    <button class="nav-item regular" data-tab="nav3"><p class="labelM">Colors</p></button>
-                    <button class="nav-item regular" data-tab="nav3"><p class="labelM">Grids & Layouts</p></button>
+                    <button class="nav-item regular" data-tab="colors"><p class="labelM">Colors</p></button>
+                    <button class="nav-item regular" data-tab="grids"><p class="labelM">Grids & Layouts</p></button>
                 </nav>
             </div>
 
             <div class="cell medium-6 large-9 selected-content">
+                <div id="heading-styles" class="content-section hidden"><include src="typography/heading.html"></include></div>
+                <div id="body-styles" class="content-section hidden"><include src="typography/body.html"></include></div>
+                <div id="link-styles" class="content-section hidden"><include src="typography/link.html"></include></div>
+                <div id="label-styles" class="content-section hidden"><include src="typography/label.html"></include></div>
+                <div id="input-styles" class="content-section hidden"><include src="typography/input.html"></include></div>
                 <div id="spacing" class="content-section hidden"><include src="spacing.html"></include></div>
-                <div id="inputs-checkbox" class="content-section hidden"><include src="inputs/checkbox.html"></include></div>
-                <div id="inputs-datepicker" class="content-section hidden"><include src="inputs/datepicker.html"></include></div>
+                <div id="elevation" class="content-section hidden"><include src="elevation.html"></include></div>
             </div>
         </div>
 

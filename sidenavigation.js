@@ -70,54 +70,62 @@
 
   // Select all sub nav items and content sections
 // SIDE NAV
-const subNavItems = document.querySelectorAll('.nav-item.sub');
+const allNavItems = document.querySelectorAll('.nav-item'); // Gets both regular and sub
 const contentSections = document.querySelectorAll('.content-section');
 
-subNavItems.forEach(item => {
+allNavItems.forEach(item => {
   item.addEventListener('click', () => {
     const targetId = item.getAttribute('data-tab');
-
+    
     // Hide all content sections
     contentSections.forEach(section => {
       section.classList.add('hidden');
     });
-
+    
     // Show the selected content section
     const targetSection = document.getElementById(targetId);
     if (targetSection) {
       targetSection.classList.remove('hidden');
     }
-
-    // Optional: highlight active nav item
-    subNavItems.forEach(nav => nav.classList.remove('active'));
+    
+    // Remove active class from all nav items and add to clicked item
+    allNavItems.forEach(nav => nav.classList.remove('active'));
     item.classList.add('active');
   });
 });
 
+
+
 // TABS
 document.addEventListener('DOMContentLoaded', () => {
-  const tabButtons = document.querySelectorAll('.tab-btn');
-  const tabPanels = document.querySelectorAll('.tab-panel');
-
-  console.log('Tab buttons found:', tabButtons.length); // Should log 3
-
-  tabButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      const target = button.getAttribute('data-tab');
-      const panel = document.getElementById(target);
-
-      tabButtons.forEach(btn => btn.classList.remove('active'));
-      tabPanels.forEach(p => p.classList.remove('active'));
-
-      button.classList.add('active');
-      panel.classList.add('active');
+  // Wait a bit more to ensure all content is loaded
+  setTimeout(() => {
+    const tabButtons = document.querySelectorAll('.tab-btn');
+    const tabPanels = document.querySelectorAll('[id^="tab"]'); // Find any element with ID starting with "tab"
+    
+    console.log('Tab buttons found:', tabButtons.length);
+    console.log('Tab panels found:', tabPanels.length);
+    console.log('All panels:', Array.from(tabPanels).map(p => p.id));
+    
+    tabButtons.forEach(button => {
+      button.addEventListener('click', () => {
+        const target = button.getAttribute('data-tab');
+        const panel = document.getElementById(target);
+        
+        if (panel) {
+          // Remove active from all
+          tabButtons.forEach(btn => btn.classList.remove('active'));
+          document.querySelectorAll('[id^="tab"]').forEach(p => p.classList.remove('active'));
+          
+          // Add active to current
+          button.classList.add('active');
+          panel.classList.add('active');
+        } else {
+          console.error('Panel not found:', target);
+        }
+      });
     });
-  });
+  }, 100); // Small delay
 });
-
-
-
-
-  
 
 

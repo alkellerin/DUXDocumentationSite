@@ -25,6 +25,19 @@
 /* UNIVERSAL DOCUMENTATION STYLES */
 .documentation {
     margin-top: 6rem;
+    max-width: 62.5rem;
+}
+
+.foundation_example {
+  margin-top: 2rem;
+}
+
+.font_family {
+  margin-top: 2rem;
+} 
+
+.styles {
+  margin-top: 2rem;
 }
 
 .example {
@@ -82,5 +95,5 @@
 }
 
 .tab-panel.active {
-  display: block;
+  display: block !important;
 }
