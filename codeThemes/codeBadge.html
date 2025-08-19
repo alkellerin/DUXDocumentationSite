@@ -1,0 +1,218 @@
+<html lang="en"
+	data-page="/plugins/line-numbers/"
+	data-inputpath="plugins/line-numbers/README.md">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="code.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+
+        <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js" defer></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-okaidia.min.css">
+<!-- https://prismjs.com/download#themes=prism-okaidia&languages=markup+css+clike+javascript+css-extras&plugins=line-highlight+line-numbers+custom-class+show-language+highlight-keywords+inline-color+command-line+toolbar+match-braces -->
+    </head>
+
+    <body>
+        <div class="codeBox">
+            <div class="file">
+                <p>HTML File</p>
+            </div>
+            <pre class="line-numbers"><code class="language-HTML">
+        &lt;div class=&quot;badgeRegular badgeLarge&quot;&gt;
+            &lt;i class=&quot;ph ph-placeholder size24&quot;&gt;&lt;/i&gt;
+            &lt;p class=&quot;labelS&quot;&gt;Badge Label&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;badgeRegular badgeSmall&quot;&gt;
+            &lt;i class=&quot;ph ph-placeholder size24&quot;&gt;&lt;/i&gt;
+            &lt;p class=&quot;labelXS&quot;&gt;Badge Label&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;badgeGray badgeLarge&quot;&gt;
+            &lt;i class=&quot;ph ph-placeholder size24&quot;&gt;&lt;/i&gt;
+            &lt;p class=&quot;labelS&quot;&gt;Badge Label&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;badgeGray badgeSmall&quot;&gt;
+            &lt;i class=&quot;ph ph-placeholder size24&quot;&gt;&lt;/i&gt;
+            &lt;p class=&quot;labelXS&quot;&gt;Badge Label&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;badgeBold badgeLarge&quot;&gt;
+            &lt;i class=&quot;ph ph-placeholder size24&quot;&gt;&lt;/i&gt;
+            &lt;p class=&quot;labelS&quot;&gt;Badge Label&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;badgeBold badgeSmall&quot;&gt;
+            &lt;i class=&quot;ph ph-placeholder size24&quot;&gt;&lt;/i&gt;
+            &lt;p class=&quot;labelXS&quot;&gt;Badge Label&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;badgeGreen badgeLarge&quot;&gt;
+            &lt;i class=&quot;ph ph-placeholder size24&quot;&gt;&lt;/i&gt;
+            &lt;p class=&quot;labelS&quot;&gt;Badge Label&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;badgeGreen badgeSmall&quot;&gt;
+            &lt;i class=&quot;ph ph-placeholder size24&quot;&gt;&lt;/i&gt;
+            &lt;p class=&quot;labelXS&quot;&gt;Badge Label&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;badgeYellow badgeLarge&quot;&gt;
+            &lt;i class=&quot;ph ph-placeholder size24&quot;&gt;&lt;/i&gt;
+            &lt;p class=&quot;labelS&quot;&gt;Badge Label&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;badgeYellow badgeSmall&quot;&gt;
+            &lt;i class=&quot;ph ph-placeholder size24&quot;&gt;&lt;/i&gt;
+            &lt;p class=&quot;labelXS&quot;&gt;Badge Label&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;badgeRed badgeLarge&quot;&gt;
+            &lt;i class=&quot;ph ph-placeholder size24&quot;&gt;&lt;/i&gt;
+            &lt;p class=&quot;labelS&quot;&gt;Badge Label&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;badgeRed badgeSmall&quot;&gt;
+            &lt;i class=&quot;ph ph-placeholder size24&quot;&gt;&lt;/i&gt;
+            &lt;p class=&quot;labelXS&quot;&gt;Badge Label&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;badgeBlue badgeProgressLarge&quot;&gt;
+            &lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;i class=&quot;ph-fill ph-circle&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;p class=&quot;labelS&quot;&gt;In Progress&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;badgeBlue badgeProgressSmall&quot;&gt;
+            &lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;i class=&quot;ph-fill ph-circle&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;p class=&quot;labelXS&quot;&gt;In Progress&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;badgeGreen badgeProgressLarge&quot;&gt;
+            &lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;i class=&quot;ph-fill ph-circle&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;p class=&quot;labelS&quot;&gt;Success&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;badgeGreen badgeProgressSmall&quot;&gt;
+            &lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;i class=&quot;ph-fill ph-circle&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;p class=&quot;labelXS&quot;&gt;Success&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;badgeYellow badgeProgressLarge&quot;&gt;
+            &lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;i class=&quot;ph-fill ph-circle&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;p class=&quot;labelS&quot;&gt;Warning&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;badgeYellow badgeProgressSmall&quot;&gt;
+            &lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;i class=&quot;ph-fill ph-circle&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;p class=&quot;labelXS&quot;&gt;Warning&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;badgeRed badgeProgressLarge&quot;&gt;
+            &lt;span style=&quot;font-size: 12px;&quot;&gt;&lt;i class=&quot;ph-fill ph-circle&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;p class=&quot;labelS&quot;&gt;Error&lt;/p&gt;
+        &lt;/div&gt;
+
+        &lt;div class=&quot;badgeRed badgeProgressSmall&quot;&gt;
+            &lt;span style=&quot;font-size: 8px;&quot;&gt;&lt;i class=&quot;ph-fill ph-circle&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+            &lt;p class=&quot;labelXS&quot;&gt;Error&lt;/p&gt;
+        &lt;/div&gt;</code></pre>
+        </div>
+         
+        <div class="codeBox">
+            <div class="file">
+                <p>CSS File</p>
+            </div>
+            <pre class="line-numbers"><code class="language-css">.badgeLarge {
+    align-items: center;
+    display: inline flex;
+    gap: 4px;
+    border-radius: 100px;
+    padding: 8px 16px;
+    min-width: 50px;
+}
+
+.badgeSmall {
+    align-items: center;
+    display: inline flex;
+    gap: 2px;
+    border-radius: 100px;
+    padding: 4px 8px;
+    min-width: 50px;
+}
+
+.badgeProgressLarge {
+    align-items: center;
+    display: inline flex;
+    gap: 2px;
+    border-radius: 100px;
+    padding: 4px 8px;
+    min-width: 50px;
+}
+
+.badgeProgressSmall {
+    align-items: center;
+    display: inline flex;
+    gap: 4px;
+    border-radius: 100px;
+    padding: 4px 8px;
+    min-width: 50px;
+}
+
+.badgeRegular {
+    color: var(--text-brand-blue);
+    background-color: var(--bg-brand-blue-subtlest);
+    min-width: 100px;
+}
+
+.badgeGray {
+    color: var(--text-bold);
+    background-color: var(--bg-gray-gray-subtler);
+}
+
+.badgeBold {
+    color: var(--text-inverse);
+    background-color: var(--bg-surface-surface-bold);
+}
+
+.badgeGreen {
+    color: var(--text-success);
+    background-color: var(--bg-success-subtlest);
+}
+
+.badgeYellow {
+    color: var(--text-warning);
+    background-color: var(--bg-warning-subtlest);
+}
+
+.badgeRed {
+    color: var(--text-danger);
+    background-color: var(--bg-danger-subtlest);
+}
+
+.badgeBlue {
+    color: var(--text-link);
+    background-color: var(--bg-info-subtlest);
+}</code></pre>
+        </div>
+
+        <!-- <div class="codeBox">
+            <div class="file">
+                <p>Javascript File</p>
+            </div>
+            <pre class="line-numbers"><code class="language-js">p { color: red }</code></pre>
+        </div> -->
+
+
+    </body>
+</html>
+

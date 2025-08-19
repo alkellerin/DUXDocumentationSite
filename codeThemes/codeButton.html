@@ -1,0 +1,387 @@
+<html lang="en"
+	data-page="/plugins/line-numbers/"
+	data-inputpath="plugins/line-numbers/README.md">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="code.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+
+        <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js" defer></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-okaidia.min.css">
+<!-- https://prismjs.com/download#themes=prism-okaidia&languages=markup+css+clike+javascript+css-extras&plugins=line-highlight+line-numbers+custom-class+show-language+highlight-keywords+inline-color+command-line+toolbar+match-braces -->
+    </head>
+
+    <body>
+        <div class="codeBox">
+            <div class="file">
+                <p>HTML File</p>
+            </div>
+            <pre class="line-numbers"><code class="language-HTML">&lt;button class=&quot;button-brand&quot; href=&quot;&quot;&gt;&lt;p class=&quot;labelM&quot;&gt;Button Title&lt;/p&gt;&lt;/button&gt;
+&lt;button class=&quot;button-brand-small&quot; href=&quot;&quot;&gt;&lt;p class=&quot;labelS&quot;&gt;Button Title&lt;/p&gt;&lt;/button&gt;
+    
+&lt;button class=&quot;button-brand-subtle&quot; href=&quot;&quot;&gt;&lt;p class=&quot;labelM&quot;&gt;Button Title&lt;/p&gt;&lt;/button&gt;
+&lt;button class=&quot;button-brand-subtle-small&quot; href=&quot;&quot;&gt;&lt;p class=&quot;labelS&quot;&gt;Button Title&lt;/p&gt;&lt;/button&gt;
+    
+&lt;button class=&quot;button-gray&quot; href=&quot;&quot;&gt;&lt;p class=&quot;labelM&quot;&gt;Button Title&lt;/p&gt;&lt;/button&gt;
+&lt;button class=&quot;button-gray-small&quot; href=&quot;&quot;&gt;&lt;p class=&quot;labelS&quot;&gt;Button Title&lt;/p&gt;&lt;/button&gt;
+    
+&lt;button class=&quot;button-gray-subtle&quot; href=&quot;&quot;&gt;&lt;p class=&quot;labelM&quot;&gt;Button Title&lt;/p&gt;&lt;/button&gt;
+&lt;button class=&quot;button-gray-subtle-small&quot; href=&quot;&quot;&gt;&lt;p class=&quot;labelS&quot;&gt;Button Title&lt;/p&gt;&lt;/button&gt;
+    
+&lt;button class=&quot;button-danger&quot; href=&quot;&quot;&gt;&lt;p class=&quot;labelM&quot;&gt;Button Title&lt;/p&gt;&lt;/button&gt;
+&lt;button class=&quot;button-danger-small&quot; href=&quot;&quot;&gt;&lt;p class=&quot;labelS&quot;&gt;Button Title&lt;/p&gt;&lt;/button&gt;
+    
+&lt;button class=&quot;button-danger-subtle&quot; href=&quot;&quot;&gt;&lt;p class=&quot;labelM&quot;&gt;Button Title&lt;/p&gt;&lt;/button&gt;
+&lt;button class=&quot;button-danger-subtle-small&quot; href=&quot;&quot;&gt;&lt;p class=&quot;labelS&quot;&gt;Button Title&lt;/p&gt;&lt;/button&gt;
+
+&lt;button class=&quot;button-brand-yellow&quot; href=&quot;&quot;&gt;&lt;p class=&quot;labelM&quot;&gt;Button Title&lt;/p&gt;&lt;/button&gt;
+&lt;button class=&quot;button-brand-yellow-small&quot; href=&quot;&quot;&gt;&lt;p class=&quot;labelS&quot;&gt;Button Title&lt;/p&gt;&lt;/button&gt;
+
+&lt;button class=&quot;button-link&quot; href=&quot;&quot;&gt;&lt;p class=&quot;linkS&quot;&gt;Link Title&lt;/p&gt;&lt;/button&gt;</code></pre>
+        </div>
+        
+        <div class="codeBox">
+            <div class="file">
+                <p>CSS File</p>
+            </div>
+            <pre class="line-numbers"><code class="language-css">/* DEFAULT BUTTONS -------------------------------------------------------------- */
+.button-brand{
+    border-radius: 8px;
+    padding: 8px 16px;
+    min-width: 100px;
+    color: var(--text-inverse);
+    background-color: var(--bg-brand-blue);
+}
+
+    .button-brand:hover {
+        background-color: var(--bg-brand-blue-hover);
+    }
+
+    .button-brand:active {
+        background-color: var(--bg-brand-blue-active);
+    }
+
+    .button-brand:disabled {
+        background-color: rgba(0, 0, 0, 0.12);
+        color:var(--text-label);
+    }
+
+.button-brand-small{
+    border-radius: 8px;
+    padding: 8px 12px;
+    min-width: 100px;
+    color: var(--text-inverse);
+    background-color: var(--bg-brand-blue);
+}
+
+    .button-brand-small:hover {
+        background-color: var(--bg-brand-blue-hover);
+    }
+
+    .button-brand-small:active {
+        background-color: var(--bg-brand-blue-active);
+    }
+
+    .button-brand-small:disabled {
+        background-color: rgba(0, 0, 0, 0.12);
+        color:var(--text-label);
+    }
+
+.button-brand-subtle{
+    border: 1px solid var(--border-brand-blue);
+    border-radius: 8px;
+    padding: 8px 16px;
+    min-width: 100px;
+    color: var(--text-brand-blue);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+    .button-brand-subtle:hover {
+        background-color: rgba(0, 0, 0, 0.06);
+    }
+
+    .button-brand-subtle:active {
+        background-color: rgba(0, 0, 0, 0.12);
+    }
+
+    .button-brand-subtle:disabled {
+        background-color: rgba(0, 0, 0, 0.12);
+        color:var(--text-label);
+        border: none;
+    }
+
+.button-brand-subtle-small{
+    border: 1px solid var(--border-brand-blue);
+    border-radius: 8px;
+    padding: 8px 12px;
+    min-width: 100px;
+    color: var(--text-brand-blue);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+    .button-brand-subtle-small:hover {
+        background-color: rgba(0, 0, 0, 0.06);
+    }
+
+    .button-brand-subtle-small:active {
+        background-color: rgba(0, 0, 0, 0.12);
+    }
+
+    .button-brand-subtle-small:disabled {
+        background-color: rgba(0, 0, 0, 0.12);
+        color:var(--text-label);
+        border: none;
+    }
+
+/* GRAY BUTTONS -------------------------------------------------------------- */
+.button-gray{
+    border-radius: 8px;
+    padding: 8px 16px;
+    min-width: 100px;
+    color: var(--text-inverse);
+    background-color: var(--bg-gray-gray-bold);
+}
+
+    .button-gray:hover {
+        background-color: var(--bg-gray-gray-bold-hover);
+    }
+
+    .button-gray:active {
+        background-color: var(--bg-gray-gray-bold-active);
+    }
+ 
+    .button-gray:disabled {
+        background-color: rgba(0, 0, 0, 0.12);
+        color:var(--text-label);
+    }
+
+.button-gray-small{
+    border-radius: 8px;
+    padding: 8px 12px;
+    min-width: 100px;
+    color: var(--text-inverse);
+    background-color: var(--bg-gray-gray-bold);
+}
+
+    .button-gray-small:hover {
+        background-color: var(--bg-gray-gray-bold-hover);
+    }
+
+    .button-gray-small:active {
+        background-color: var(--bg-gray-gray-bold-active);
+    }
+
+    .button-gray-small:disabled {
+        background-color: rgba(0, 0, 0, 0.12);
+        color:var(--text-label);
+    }
+
+.button-gray-subtle{
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 8px 16px;
+    min-width: 100px;
+    color: var(--text-bold);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+    .button-gray-subtle:hover {
+        background-color: rgba(0, 0, 0, 0.06);
+    }
+
+    .button-gray-subtle:active {
+        background-color: rgba(0, 0, 0, 0.12);
+    }
+
+    .button-gray-subtle:disabled {
+        background-color: rgba(0, 0, 0, 0.12);
+        color:var(--text-label);
+        border: none;
+    }
+
+.button-gray-subtle-small{
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    padding: 8px 12px;
+    min-width: 100px;
+    color: var(--text-bold);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+    .button-gray-subtle-small:hover {
+        background-color: rgba(0, 0, 0, 0.06);
+    }
+
+    .button-gray-subtle-small:active {
+        background-color: rgba(0, 0, 0, 0.12);
+    }
+
+    .button-gray-subtle-small:disabled {
+        background-color: rgba(0, 0, 0, 0.12);
+        color:var(--text-label);
+        border: none;
+    }
+
+/* DANGER BUTTONS -------------------------------------------------------------- */
+.button-danger{
+    border-radius: 8px;
+    padding: 8px 16px;
+    min-width: 100px;
+    color: var(--text-inverse);
+    background-color: var(--bg-danger);
+}
+
+    .button-danger:hover {
+        background-color: var(--bg-danger-hover);
+    }
+
+    .button-danger:active {
+        background-color: var(--bg-danger-active);
+    }
+
+    .button-danger:disabled {
+        background-color: rgba(0, 0, 0, 0.12);
+        color:var(--text-label);
+    }
+
+.button-danger-small{
+    border-radius: 8px;
+    padding: 8px 12px;
+    min-width: 100px;
+    color: var(--text-inverse);
+    background-color: var(--bg-danger);
+}
+
+    .button-danger-small:hover {
+        background-color: var(--bg-danger-hover);
+    }
+
+    .button-danger-small:active {
+        background-color: var(--bg-danger-active);
+    }
+
+    .button-danger-small:disabled {
+        background-color: rgba(0, 0, 0, 0.12);
+        color:var(--text-label);
+    }
+
+.button-danger-subtle{
+    border: 1px solid var(--border-danger);
+    border-radius: 8px;
+    padding: 8px 16px;
+    min-width: 100px;
+    color: var(--text-danger);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+    .button-danger-subtle:hover {
+        background-color: rgba(0, 0, 0, 0.06);
+    }
+
+    .button-danger-subtle:active {
+        background-color: rgba(0, 0, 0, 0.12);
+    }
+
+    .button-danger-subtle:disabled {
+        background-color: rgba(0, 0, 0, 0.12);
+        color:var(--text-label);
+        border: none;
+    }
+
+.button-danger-subtle-small{
+    border: 1px solid var(--border-danger);
+    border-radius: 8px;
+    padding: 8px 12px;
+    min-width: 100px;
+    color: var(--text-danger);
+    background-color: rgba(0, 0, 0, 0);
+}
+
+    .button-danger-subtle-small:hover {
+        background-color: rgba(0, 0, 0, 0.06);
+    }
+
+    .button-danger-subtle-small:active {
+        background-color: rgba(0, 0, 0, 0.12);
+    }
+
+    .button-danger-subtle-small:disabled {
+        background-color: rgba(0, 0, 0, 0.12);
+        color:var(--text-label);
+        border: none;
+    }
+
+/* YELLOW BUTTONS -------------------------------------------------------------- */
+.button-brand-yellow {
+    border-radius: 8px;
+    padding: 8px 16px;
+    min-width: 100px;
+    color: var(--text-brand-blue);
+    background-color: var(--bg-brand-yellow);
+}
+
+    .button-brand-yellow:hover {
+        background-color: var(--bg-brand-yellow-hover);
+    }
+
+    .button-brand-yellow:active {
+        background-color: var(--bg-brand-yellow-active);
+    }
+
+    .button-brand-yellow:disabled {
+        background-color: rgba(0, 0, 0, 0.12);
+        color:var(--text-label);
+    }
+
+.button-brand-yellow-small{
+    border-radius: 8px;
+    padding: 8px 12px;
+    min-width: 100px;
+    color: var(--text-brand-blue);
+    background-color: var(--bg-brand-yellow);
+}
+
+    .button-brand-yellow-small:hover {
+        background-color: var(--bg-brand-yellow-hover);
+    }
+
+    .button-brand-yellow-small:active {
+        background-color: var(--bg-brand-yellow-active);
+    }
+
+    .button-brand-yellow-small:disabled {
+        background-color: rgba(0, 0, 0, 0.12);
+        color:var(--text-label);
+    }
+
+/*LINK BUTTON -------------------------------------------------------------- */
+.button-link{
+    color: var(--text-link);
+}
+
+    .button-link:hover {
+        color: var(--text-link-hover);
+    }
+
+    .button-link:active {
+        color: var(--text-link-active);
+    }
+
+    .button-link:disabled {
+        color: var(--text-link-inactive);
+    }</code></pre>
+        </div>
+
+    </body>
+</html>
+
