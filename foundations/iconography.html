@@ -26,12 +26,14 @@
         <div class="documentation">
             <div class="intro">
                 <h1>Iconography</h1>
-                <h3>Icons are a graphical representation of a functionality or concept. DUX uses their icons from <a href="https://phosphoricons.com/">Phosphor Icons</a></h3>
+                <h3>Icons are a graphical representation of a functionality or concept. DUX uses their icons from 
+                    <button class="button-link" href="https://phosphoricons.com/"><p class="labelM">Phosphor Icons <i class="ph ph-arrow-square-out"></i></p></button>.</h3>
+
             </div>
             
             <div class="foundation_example">
                 <h1>Sizing</h1>
-                <h3>All icons should be the sizes of 16px, 24px, or 32px. Icons should only be in 32px and must be "duotone" if they are used decoratively.</h3>
+                <h3>All icons should be the sizes of 16px, 24px, or 32px. Icons should only be in 32px and must have a "duotone" class if they are being used decoratively.</h3>
                 <img src="images/iconSize.png">
             </div>
 
@@ -54,8 +56,97 @@
                 </ul>
             </div>
 
+        <h2>General Icons</h2>
+            <img src="images/Icons.png">
+        <h2>Navigation Icons</h2>
+            <img src="images/Navigation.png">
+        <h2>Feedback Icons</h2>
+            <img src="images/Feedback.png">
+        <h2>Decorative Icons</h2>
+            <img src="images/Decorative.png">
+        <h2>Social Media Icons</h2>
+            <img src="images/SocialMedia.png">
+
+            <button class="button-brand" id="ShowIt"><p class="labelM">View icon code</p></button>
+            <div class="hiddenCodeIcons" style="display: none;">
+                <table>
+                    <tr>
+                        <th><p class="labelM">Icon</p></th>
+                        <th><p class="labelM">Code</p></th>
+                        <th><p class="labelM">Used for..</p></th>
+                    </tr>
+                    <tr>
+                        <td><i class="ph ph-magnifying-glass"></i></td>
+                        <td><p class="bodyM">&lt;i class=&quot;ph ph-magnifying-glass&quot;&gt;&lt;/i&gt;</p></td>
+                        <td><p class="bodyM">Search</p></td>
+                    </tr>
+                    <tr>
+                        <td><i class="ph ph-list"></i></td>
+                        <td><p class="bodyM">&lt;i class=&quot;ph ph-list&quot;&gt;&lt;/i&gt;</p></td>
+                        <td><p class="bodyM">List, Menus</p></td>
+                    </tr>
+                    <tr>
+                        <td><i class="ph ph-plus"></i></td>
+                        <td><p class="bodyM">&lt;i class=&quot;ph ph-plus&quot;&gt;&lt;/i&gt;</p></td>
+                        <td><p class="bodyM">New, More</p></td>
+                    </tr>
+                    <tr>
+                        <td><i class="ph ph-download-simple"></i></td>
+                        <td><p class="bodyM">&lt;i class=&quot;ph ph-download-simple&quot;&gt;&lt;/i&gt;</p></td>
+                        <td><p class="bodyM">Download</p></td>
+                    </tr>
+                    <tr>
+                        <td><i class="ph ph-eye"></i></td>
+                        <td><p class="bodyM">&lt;i class=&quot;ph ph-eye&quot;&gt;&lt;/i&gt;</p></td>
+                        <td><p class="bodyM">Show, View</p></td>
+                    </tr>
+                    <tr>
+                        <td><i class="ph ph-eye-slash"></i></td>
+                        <td><p class="bodyM">&lt;i class=&quot;ph ph-eye-slash&quot;&gt;&lt;/i&gt;</p></td>
+                        <td><p class="bodyM">Hide</p></td>
+                    </tr>
+                    <tr>
+                        <td><i class="ph ph-link"></i></td>
+                        <td><p class="bodyM">&lt;i class=&quot;ph ph-link&quot;&gt;&lt;/i&gt;</p></td>
+                        <td><p class="bodyM">Hyperlink</p></td>
+                    </tr>
+                    <tr>
+                        <td><i class="ph ph-file-pdf"></i></td>
+                        <td><p class="bodyM">&lt;i class=&quot;ph ph-file-pdf&quot;&gt;&lt;/i&gt;</p></td>
+                        <td><p class="bodyM">PDFs</p></td>
+                    </tr>
+                    <tr>
+                        <td><i class="ph ph-calendar-dots"></i></td>
+                        <td><p class="bodyM">&lt;i class=&quot;ph ph-calendar-dots&quot;&gt;&lt;/i&gt;</p></td>
+                        <td><p class="bodyM">Dates, Date Picker</p></td>
+                    </tr>
+                    <tr>
+                        <td><i class="ph ph-lock-key"></i></td>
+                        <td><p class="bodyM">&lt;i class=&quot;ph ph-lock-key&quot;&gt;&lt;/i&gt;</p></td>
+                        <td><p class="bodyM">Password</p></td>
+                    </tr>
+                    <tr>
+                        <td><i class="ph ph-headset"></i></td>
+                        <td><p class="bodyM">&lt;i class=&quot;ph ph-headset&quot;&gt;&lt;/i&gt;</p></td>
+                        <td><p class="bodyM">Chatbot</p></td>
+                    </tr><tr>
+                        <td><i class="ph ph-clock"></i></td>
+                        <td><p class="bodyM">&lt;i class=&quot;ph ph-clock&quot;&gt;&lt;/i&gt;</p></td>
+                        <td><p class="bodyM">Time, Scheduling</p></td>
+                    </tr>
+                </table>
+            </div>
+
         </div> 
         
+        <script>
+            const showButton = document.getElementById('ShowIt');
+            const hiddenContent = document.getElementById('hiddenCodeIcons');
+
+            showButton.addEventListener('click', function() {
+                hiddenCodeIcons.style.display = 'block'; 
+            });
+        </script>
     </body>
     
 </html>
