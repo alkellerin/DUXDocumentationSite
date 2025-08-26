@@ -46,13 +46,12 @@
     border-radius: .5rem;
     border: 1px solid var(--border-subtle);
     background: var(--bg-surface-surface);
-
 }
 
-.cardArticle:hover {
-    transform: translateY(-4px);
-    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
-}
+    .cardArticle:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+    }
 
 .cardContent {
     padding: 1rem;
@@ -196,7 +195,7 @@
 
 .readMore {
     position: absolute;
-    bottom: 0;
+    bottom: 1rem;
 }
 
 .cardInfo {
@@ -385,4 +384,30 @@ td {
 
     scrollbar-width: none; 
   -ms-overflow-style: none; 
+}
+
+/* DANGER POPUP ------------------------------------- */
+.close {
+    float: right;
+}
+
+.dangerPopup {
+    background-color: var(--bg-surface-surface-raised);
+    max-width: 416px;
+    gap: 8px;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: 1px solid var(--border-subtle);
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+}
+
+.dangerPopup .headingS {
+    color: var(--text-danger);
+}
+
+.options {
+    display: flex;
+    gap: 8px;
 }

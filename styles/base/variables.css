@@ -180,6 +180,7 @@ body {
 	--border-link-hover: var(--light-blue-800);
     --border-link-inactive: var(--light-blue-200);
 
+	--text-link: var(--light-blue-700);
 	--text-link-active: var(--light-blue-900);
 	--text-link-hover: var(--light-blue-800);
 	--text-link-inactive: var(--light-blue-200);
