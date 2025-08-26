@@ -1,0 +1,105 @@
+<html lang="en"
+	data-page="/plugins/line-numbers/"
+	data-inputpath="plugins/line-numbers/README.md">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="code.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+
+        <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js" defer></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-okaidia.min.css">
+<!-- https://prismjs.com/download#themes=prism-okaidia&languages=markup+css+clike+javascript+css-extras&plugins=line-highlight+line-numbers+custom-class+show-language+highlight-keywords+inline-color+command-line+toolbar+match-braces -->
+    </head>
+
+    <body>
+        <div class="codeBox">
+            <div class="file">
+                <p>HTML File</p>
+            </div>
+            <pre class="line-numbers"><code class="language-HTML">&lt;!-- INFO CARD SMALL ---------------------------------------------------------- --&gt;
+                    &lt;div class=&quot;info-card-small&quot;&gt;
+                        &lt;p class=&quot;headingS&quot;&gt;Card Title&lt;/p&gt;
+                        &lt;p class=&quot;bodyS&quot;&gt;Lorem ipsum dolor sit amet, consectetur elit adipiscing, sed do eiusm tem dolor.&lt;/p&gt;
+                        &lt;!-- placeholder content/buttons go here --&gt;
+                    &lt;/div&gt;
+
+                    &lt;!-- INFO CARD LARGE ---------------------------------------------------------- --&gt;
+                    &lt;div class=&quot;info-card-large&quot;&gt;
+                        &lt;p class=&quot;headingL&quot;&gt;Card Title&lt;/p&gt;
+                        &lt;p class=&quot;bodyL&quot;&gt;Lorem ipsum dolor sit amet, consectetur elit adipiscing, sed do eiusm tem dolor.&lt;/p&gt;
+                        &lt;!-- placeholder content/buttons go here --&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;
+
+                &lt;div class=&quot;vertical&quot;&gt;
+                    &lt;!-- INFO CARD SMALL V2---------------------------------------------------------- --&gt;
+                    &lt;div class=&quot;info-card-small&quot;&gt;
+                        &lt;i class=&quot;ph ph-check size32&quot;&gt;&lt;/i&gt;
+                        &lt;p class=&quot;headingS&quot;&gt;&lt;span style=&quot;color:var(--text-brand-blue)&quot;&gt;Card Title&lt;/span&gt;&lt;/p&gt;
+                        &lt;p class=&quot;bodyS&quot;&gt;Lorem ipsum dolor sit amet, consectetur elit adipiscing, sed do eiusm tem dolor.&lt;/p&gt;
+                    &lt;/div&gt;
+                    
+                    &lt;!-- INFO CARD LARGE V2---------------------------------------------------------- --&gt;
+                    &lt;div class=&quot;info-card-large&quot;&gt;
+                        &lt;i class=&quot;ph ph-check size24&quot;&gt;&lt;/i&gt;
+                        &lt;p class=&quot;headingL&quot;&gt;&lt;span style=&quot;color:var(--text-brand-blue)&quot;&gt;Card Title&lt;/span&gt;&lt;/p&gt;
+                        &lt;p class=&quot;bodyL&quot;&gt;Lorem ipsum dolor sit amet, consectetur elit adipiscing, sed do eiusm tem dolor.&lt;/p&gt;
+                    &lt;/div&gt;</code></pre>
+        </div>
+        
+        <div class="codeBox">
+            <div class="file">
+                <p>CSS File</p>
+            </div>
+            <pre class="line-numbers"><code class="language-css">.info-card-small {
+    display: flex;
+    width: var(--Columns-6, 216px);
+    min-width: 171px;
+    max-width: 416px;
+    padding: var(--Space-M, 16px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+
+    border-radius: .5rem;
+    border: 1px solid var(--border-subtle);
+    background: var(--text-display);
+}
+
+.info-card-large {
+    display: flex;
+    width: var(--Columns-4, 332px);
+    min-width: 171px;
+    max-width: 448px;
+    padding: var(--Space-M, 16px);
+    flex-direction: column;
+    align-items: flex-start;
+    gap: .5rem;
+
+    border-radius: .5rem;
+    border: 1px solid var(--border-subtle);
+    background: var(--bg-surface-surface);
+}</code></pre>
+        </div>
+
+        <!-- <div class="codeBox">
+            <div class="file">
+                <p>Javascript File</p>
+            </div>
+            <pre class="line-numbers"><code class="language-js">p { color: red }</code></pre>
+        </div> -->
+
+
+    </body>
+</html>
+

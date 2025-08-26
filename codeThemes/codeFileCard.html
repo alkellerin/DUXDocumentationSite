@@ -1,0 +1,78 @@
+<html lang="en"
+	data-page="/plugins/line-numbers/"
+	data-inputpath="plugins/line-numbers/README.md">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="code.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+
+        <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js" defer></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-okaidia.min.css">
+<!-- https://prismjs.com/download#themes=prism-okaidia&languages=markup+css+clike+javascript+css-extras&plugins=line-highlight+line-numbers+custom-class+show-language+highlight-keywords+inline-color+command-line+toolbar+match-braces -->
+    </head>
+
+    <body>
+        <div class="codeBox">
+            <div class="file">
+                <p>HTML File</p>
+            </div>
+            <pre class="line-numbers"><code class="language-HTML">&lt;div class=&quot;fileCard&quot;&gt;
+                    &lt;i class=&quot;ph ph-file-arrow-down size32&quot;&gt;&lt;/i&gt;
+                    &lt;div&gt;
+                        &lt;p class=&quot;labelXS&quot;&gt;Document Type&lt;/p&gt;
+                        &lt;p class=&quot;bodyXS&quot;&gt;Document Name&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;</code></pre>
+        </div>
+        
+        <div class="codeBox">
+            <div class="file">
+                <p>CSS File</p>
+            </div>
+            <pre class="line-numbers"><code class="language-css">.fileCard {
+    display: flex;
+    width: var(--Columns-6, 13.5rem);
+    min-width: 9.75rem;
+    max-width: 20.75rem;
+    padding: var(--Space-XS, 0.5rem);
+    align-items: center;
+    align-content: center;
+    gap: 0.5rem var(--Space-XS, 0.5rem);
+    flex-wrap: wrap;
+
+    border-radius: .5rem;
+    background-color: var(--bg-brand-blue);
+    color: var(--text-display);
+}
+
+    .fileCard:hover {
+        background-color: var(--bg-brand-blue-hover);
+    }
+
+    .fileCard:active {
+        background-color: var(--bg-brand-blue-active);
+    }
+</code></pre>
+        </div>
+
+        <!-- <div class="codeBox">
+            <div class="file">
+                <p>Javascript File</p>
+            </div>
+            <pre class="line-numbers"><code class="language-js">p { color: red }</code></pre>
+        </div> -->
+
+
+    </body>
+</html>
+

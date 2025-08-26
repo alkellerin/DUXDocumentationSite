@@ -1,0 +1,89 @@
+<html lang="en"
+	data-page="/plugins/line-numbers/"
+	data-inputpath="plugins/line-numbers/README.md">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="code.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+
+        <script src="https://cdn.jsdelivr.net/npm/prismjs/prism.min.js" defer></script>
+        <script src="https://cdn.jsdelivr.net/npm/prismjs/plugins/autoloader/prism-autoloader.min.js" defer></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs/themes/prism-okaidia.min.css">
+<!-- https://prismjs.com/download#themes=prism-okaidia&languages=markup+css+clike+javascript+css-extras&plugins=line-highlight+line-numbers+custom-class+show-language+highlight-keywords+inline-color+command-line+toolbar+match-braces -->
+    </head>
+
+    <body>
+        <div class="codeBox">
+            <div class="file">
+                <p>HTML File</p>
+            </div>
+            <pre class="line-numbers"><code class="language-HTML">&lt;div class=&quot;cardVideo&quot;&gt;
+                    &lt;div class=&quot;thumbnail_cover&quot;&gt;
+                        &lt;img src=&quot;../images/video-placeholder.jpg&quot; class=&quot;thumbnail_video&quot; alt=&quot;&quot; /&gt;
+                    &lt;/div&gt;
+
+                    &lt;div class=&quot;cardContent&quot;&gt;
+                        &lt;span style=&quot;color:var(--text-label)&quot;&gt;&lt;p class=&quot;labelS&quot;&gt;CATEGORY NAME&lt;/p&gt;&lt;/span&gt;
+                        &lt;p class=&quot;headingS&quot;&gt;Video Title Here&lt;/p&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt;</code></pre>
+        </div>
+        
+        <div class="codeBox">
+            <div class="file">
+                <p>CSS File</p>
+            </div>
+            <pre class="line-numbers"><code class="language-css">.cardVideo{
+    display: flex;
+    width: var(--Columns-6, 13.5rem);
+    min-width: 9.75rem;
+    max-width: 20.75rem;
+    min-height: 16rem;
+    flex-direction: column;
+    align-items: flex-start;
+    position: relative;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    border-radius: .5rem;
+    border: 1px solid var(--border-subtle);
+    background: var(--bg-surface-surface);
+
+}
+
+.cardVideo:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.15);
+}
+
+.cardContent {
+    padding: 1rem;
+    gap: 0.25rem;
+}
+
+.thumbnail_video {
+    height: 9rem;
+    width: 100%;
+    border-radius: 8px 8px 0px 0px;
+}</code></pre>
+        </div>
+
+        <!-- <div class="codeBox">
+            <div class="file">
+                <p>Javascript File</p>
+            </div>
+            <pre class="line-numbers"><code class="language-js">p { color: red }</code></pre>
+        </div> -->
+
+
+    </body>
+</html>
+
