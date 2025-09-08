@@ -112,3 +112,20 @@
 .tab-panel.active {
   display: block !important;
 }
+
+.purpose {
+  display: flex;
+  align-items: flex-start;
+  
+}
+
+.purposeIcon {
+  font-size: 32px;
+  color: #FAB32F;
+  padding-right: 8px;
+}
+
+.aboutComponent {
+  padding: 24px 0;
+  gap: 16px;
+}
