@@ -197,14 +197,16 @@ body {
 	--text-danger: var(--light-red-1100);
     --text-inverse: var(--light-gray-100);
     --text-inverse-subtle: var(--light-gray-300);
+	--text-info: var(--light-blue-900);
 
     --icon-disabled: var(--light-gray-1100);
 	--icon-bold: var(--light-gray-1300);
+	--icon-brand-blue: var(--light-brand-blue-700);
+	--icon-brand-yellow: var(--light-brand-yellow-700);
 	--icon-warning: var(--light-yellow-1100);
 	--icon-danger: var(--light-red-1100);
 	--icon-success: var(--light-green-1100);
 	--icon-link: var(--light-blue-900);
-	--text-info: var(--light-blue-900);
 	--icon-info: var(--light-blue-900);
 }
 

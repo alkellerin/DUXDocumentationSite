@@ -1,0 +1,64 @@
+.badge-progress-lg {
+    border-radius: 100px;
+    padding: 4px 8px;
+    color: var(--text-info);
+    background-color: var(--bg-info-subtlest);
+    margin: auto;
+    align-items: left;
+}
+
+.badge-success-lg {
+    border-radius: 100px;
+    padding: 4px 8px;
+    color: var(--text-success);
+    background-color: var(--bg-success-subtlest);
+    align-items: left;
+}
+
+.badge-warning-lg {
+    border-radius: 100px;
+    padding: 4px 8px;
+    color: var(--text-warning);
+    background-color: var(--bg-warning-subtlest);
+    align-items: left;
+}
+
+.badge-error-lg {
+    border-radius: 100px;
+    padding: 4px 8px;
+    color: var(--text-danger);
+    background-color: var(--bg-danger-subtlest);
+    align-items: left;
+}
+
+.badge-progress-sm {
+    border-radius: 100px;
+    padding: 4px;
+    color: var(--text-info);
+    background-color: var(--bg-info-subtlest);
+    align-items: left;
+}
+
+.badge-success-sm {
+    border-radius: 100px;
+    padding: 4px;
+    color: var(--text-success);
+    background-color: var(--bg-success-subtlest);
+    align-items: left;
+}
+
+.badge-warning-sm {
+    border-radius: 100px;
+    padding: 4px;
+    color: var(--text-warning);
+    background-color: var(--bg-warning-subtlest);
+    align-items: left;
+}
+
+.badge-error-sm {
+    border-radius: 100px;
+    padding: 4px;
+    color: var(--text-danger);
+    background-color: var(--bg-danger-subtlest);
+    align-items: left;
+}

@@ -1,0 +1,137 @@
+.feedback-info{
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+
+    border-radius: 20px;
+    padding: 16px;
+    color: var(--text-bold);
+    background-color: var(--bg-info-subtlest);
+}
+
+.feedback-success{
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+
+    border-radius: 20px;
+    padding: 16px;
+    color: var(--text-bold);
+    background-color: var(--bg-success-subtlest);
+}
+
+.feedback-warning{
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+
+    border-radius: 20px;
+    padding: 16px;
+    color: var(--text-bold);
+    background-color: var(--bg-warning-subtlest);
+}
+
+.feedback-danger{
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+
+    border-radius: 20px;
+    padding: 16px;
+    color: var(--text-bold);
+    background-color: var(--bg-danger-subtlest);
+}
+
+.feedback-notif {
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+
+    border-radius: 20px;
+    padding: 16px;
+    color: var(--text-bold);
+    background-color: var(--bg-surface-surface-raised);
+}
+
+.feedback-info-sm {
+    display: inline-flex;
+    margin: auto;
+    padding: 8px;
+    gap: 8px;
+    color: var(--text-bold);
+    background-color: var(--bg-info-subtlest);
+}
+    .feedback-notif-sm .ph {
+        margin: auto;
+    }
+
+    .feedback-notif-sm .ph-info {
+        color: var(--icon-link);
+    }
+
+
+.feedback-success-sm {
+    display: inline-flex;
+    margin: auto;
+    padding: 8px;
+    gap: 8px;
+    color: var(--text-bold);
+    background-color: var(--bg-success-subtlest);
+}
+    .feedback-notif-sm .ph {
+        margin: auto;
+    }
+
+    .feedback-notif-sm .ph-check-circle {
+        color: var(--icon-success);
+    }
+
+
+.feedback-warning-sm {
+    display: inline-flex;
+    margin: auto;
+    padding: 8px;
+    gap: 8px;
+    color: var(--text-bold);
+    background-color: var(--bg-warning-subtlest);
+}
+    .feedback-warning-sm .ph {
+        margin: auto;
+    }
+
+    .feedback-warning-sm .ph-warning {
+        color: var(--icon-warning);
+    }
+
+
+.feedback-danger-sm {
+    display: inline-flex;
+    margin: auto;
+    padding: 8px;
+    gap: 8px;
+    color: var(--text-bold);
+    background-color: var(--bg-danger-subtlest);
+}
+    .feedback-danger-sm .ph {
+        margin: auto;
+    }
+
+    .feedback-danger-sm .ph-warning-circle {
+        color: var(--icon-danger);
+    }
+ 
+.feedback-notif-sm {
+    display: inline-flex;
+    margin: auto;
+    padding: 8px;
+    gap: 8px;
+    color: var(--text-bold);
+    background-color: var(--bg-surface-surface-raised);
+}
+    .feedback-notif-sm .ph {
+        margin: auto;
+    }
+
+    .feedback-notif-sm .ph-bell-ringing {
+        color: var(--icon-brand-blue);
+    }
