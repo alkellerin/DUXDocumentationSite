@@ -131,3 +131,28 @@
   padding: 24px 0;
   gap: 16px;
 }
+
+.styling-content {
+  padding-top: 6rem;
+  max-width: 62.5rem;
+  margin: auto;
+}
+
+.duxportraits {
+  display: flex;
+  flex-direction: row;
+  gap: 24px;
+  justify-content: center;
+}
+
+.portrait {
+  text-align: center;
+}
+
+.portrait img{
+  width: 75%;
+}
+
+.portrait div{
+  padding: 8px;
+}
