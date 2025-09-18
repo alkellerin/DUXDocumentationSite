@@ -9,10 +9,12 @@
 
     .button-brand:hover {
         background-color: var(--bg-brand-blue-hover);
+        color: var(--text-inverse);
     }
 
     .button-brand:active {
         background-color: var(--bg-brand-blue-active);
+        color: var(--text-inverse);
     }
 
     .button-brand:disabled {
@@ -30,10 +32,12 @@
 
     .button-brand-small:hover {
         background-color: var(--bg-brand-blue-hover);
+        color: var(--text-inverse);
     }
 
     .button-brand-small:active {
         background-color: var(--bg-brand-blue-active);
+        color: var(--text-inverse);
     }
 
     .button-brand-small:disabled {
@@ -52,10 +56,12 @@
 
     .button-brand-subtle:hover {
         background-color: rgba(0, 0, 0, 0.06);
+        color: var(--text-brand-blue);
     }
 
     .button-brand-subtle:active {
         background-color: rgba(0, 0, 0, 0.12);
+        color: var(--text-brand-blue);
     }
 
     .button-brand-subtle:disabled {
@@ -75,10 +81,12 @@
 
     .button-brand-subtle-small:hover {
         background-color: rgba(0, 0, 0, 0.06);
+        color: var(--text-brand-blue); 
     }
 
     .button-brand-subtle-small:active {
         background-color: rgba(0, 0, 0, 0.12);
+        color: var(--text-brand-blue);
     }
 
     .button-brand-subtle-small:disabled {
@@ -98,10 +106,12 @@
 
     .button-gray:hover {
         background-color: var(--bg-gray-gray-bold-hover);
+        color: var(--text-inverse);
     }
 
     .button-gray:active {
         background-color: var(--bg-gray-gray-bold-active);
+        color: var(--text-inverse);
     }
  
     .button-gray:disabled {
@@ -119,10 +129,12 @@
 
     .button-gray-small:hover {
         background-color: var(--bg-gray-gray-bold-hover);
+        color: var(--text-inverse);
     }
 
     .button-gray-small:active {
         background-color: var(--bg-gray-gray-bold-active);
+        color: var(--text-inverse);
     }
 
     .button-gray-small:disabled {
@@ -141,10 +153,12 @@
 
     .button-gray-subtle:hover {
         background-color: rgba(0, 0, 0, 0.06);
+        color: var(--text-bold);
     }
 
     .button-gray-subtle:active {
         background-color: rgba(0, 0, 0, 0.12);
+        color: var(--text-bold);
     }
 
     .button-gray-subtle:disabled {
@@ -164,10 +178,12 @@
 
     .button-gray-subtle-small:hover {
         background-color: rgba(0, 0, 0, 0.06);
+        color: var(--text-bold);
     }
 
     .button-gray-subtle-small:active {
         background-color: rgba(0, 0, 0, 0.12);
+        color: var(--text-bold);
     }
 
     .button-gray-subtle-small:disabled {
@@ -187,10 +203,12 @@
 
     .button-danger:hover {
         background-color: var(--bg-danger-hover);
+        color: var(--text-inverse);
     }
 
     .button-danger:active {
         background-color: var(--bg-danger-active);
+        color: var(--text-inverse);
     }
 
     .button-danger:disabled {
@@ -208,10 +226,12 @@
 
     .button-danger-small:hover {
         background-color: var(--bg-danger-hover);
+        color: var(--text-inverse);
     }
 
     .button-danger-small:active {
         background-color: var(--bg-danger-active);
+        color: var(--text-inverse);
     }
 
     .button-danger-small:disabled {
@@ -230,10 +250,12 @@
 
     .button-danger-subtle:hover {
         background-color: rgba(0, 0, 0, 0.06);
+        color: var(--text-danger);
     }
 
     .button-danger-subtle:active {
         background-color: rgba(0, 0, 0, 0.12);
+        color: var(--text-danger);
     }
 
     .button-danger-subtle:disabled {
@@ -253,10 +275,12 @@
 
     .button-danger-subtle-small:hover {
         background-color: rgba(0, 0, 0, 0.06);
+        color: var(--text-danger);
     }
 
     .button-danger-subtle-small:active {
         background-color: rgba(0, 0, 0, 0.12);
+        color: var(--text-danger);
     }
 
     .button-danger-subtle-small:disabled {
@@ -276,10 +300,12 @@
 
     .button-brand-yellow:hover {
         background-color: var(--bg-brand-yellow-hover);
+        color: var(--text-brand-blue);
     }
 
     .button-brand-yellow:active {
         background-color: var(--bg-brand-yellow-active);
+        color: var(--text-brand-blue);
     }
 
     .button-brand-yellow:disabled {
@@ -297,10 +323,12 @@
 
     .button-brand-yellow-small:hover {
         background-color: var(--bg-brand-yellow-hover);
+        color: var(--text-brand-blue);
     }
 
     .button-brand-yellow-small:active {
         background-color: var(--bg-brand-yellow-active);
+        color: var(--text-brand-blue);
     }
 
     .button-brand-yellow-small:disabled {
