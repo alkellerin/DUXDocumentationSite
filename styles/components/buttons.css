@@ -5,6 +5,7 @@
     min-width: 100px;
     color: var(--text-inverse);
     background-color: var(--bg-brand-blue);
+    text-align: center;
 }
 
     .button-brand:hover {
@@ -28,6 +29,7 @@
     min-width: 100px;
     color: var(--text-inverse);
     background-color: var(--bg-brand-blue);
+    text-align: center;
 }
 
     .button-brand-small:hover {
@@ -52,6 +54,7 @@
     min-width: 100px;
     color: var(--text-brand-blue);
     background-color: rgba(0, 0, 0, 0);
+    text-align: center;
 }
 
     .button-brand-subtle:hover {
@@ -77,6 +80,7 @@
     min-width: 100px;
     color: var(--text-brand-blue);
     background-color: rgba(0, 0, 0, 0);
+    text-align: center;
 }
 
     .button-brand-subtle-small:hover {
@@ -102,6 +106,7 @@
     min-width: 100px;
     color: var(--text-inverse);
     background-color: var(--bg-gray-gray-bold);
+    text-align: center;
 }
 
     .button-gray:hover {
@@ -125,6 +130,7 @@
     min-width: 100px;
     color: var(--text-inverse);
     background-color: var(--bg-gray-gray-bold);
+    text-align: center;
 }
 
     .button-gray-small:hover {
@@ -149,6 +155,7 @@
     min-width: 100px;
     color: var(--text-bold);
     background-color: rgba(0, 0, 0, 0);
+    text-align: center;
 }
 
     .button-gray-subtle:hover {
@@ -174,6 +181,7 @@
     min-width: 100px;
     color: var(--text-bold);
     background-color: rgba(0, 0, 0, 0);
+    text-align: center;
 }
 
     .button-gray-subtle-small:hover {
@@ -199,6 +207,7 @@
     min-width: 100px;
     color: var(--text-inverse);
     background-color: var(--bg-danger);
+    text-align: center;
 }
 
     .button-danger:hover {
@@ -222,6 +231,7 @@
     min-width: 100px;
     color: var(--text-inverse);
     background-color: var(--bg-danger);
+    text-align: center;
 }
 
     .button-danger-small:hover {
@@ -246,6 +256,7 @@
     min-width: 100px;
     color: var(--text-danger);
     background-color: rgba(0, 0, 0, 0);
+    text-align: center;
 }
 
     .button-danger-subtle:hover {
@@ -271,6 +282,7 @@
     min-width: 100px;
     color: var(--text-danger);
     background-color: rgba(0, 0, 0, 0);
+    text-align: center;
 }
 
     .button-danger-subtle-small:hover {
@@ -296,6 +308,7 @@
     min-width: 100px;
     color: var(--text-brand-blue);
     background-color: var(--bg-brand-yellow);
+    text-align: center;
 }
 
     .button-brand-yellow:hover {
@@ -319,6 +332,7 @@
     min-width: 100px;
     color: var(--text-brand-blue);
     background-color: var(--bg-brand-yellow);
+    text-align: center;
 }
 
     .button-brand-yellow-small:hover {
