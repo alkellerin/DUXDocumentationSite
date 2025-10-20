@@ -11,7 +11,7 @@
 
     border-radius: .5rem;
     border: 1px solid var(--border-subtle);
-    background: var(--text-display);
+    background: var(--bg-surface);
 }
 
 .info-card-large {
@@ -26,7 +26,7 @@
 
     border-radius: .5rem;
     border: 1px solid var(--border-subtle);
-    background: var(--bg-surface-surface);
+    background: var(--bg-surface);
 }
 
 
@@ -85,7 +85,7 @@
 
     border-radius: .5rem;
     border: 1px solid var(--border-subtle);
-    background: var(--bg-surface-surface);
+    background: var(--bg-surface);
 
 }
 
@@ -392,7 +392,7 @@ td {
 }
 
 .dangerPopup {
-    background-color: var(--bg-surface-surface-raised);
+    background-color: var(--bg-surface-raised);
     max-width: 416px;
     gap: 8px;
     padding: 1rem;
