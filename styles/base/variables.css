@@ -209,10 +209,10 @@ body {
 	--bg-subtle: var(--light-background-100);
 	--bg-darker: var(--light-background-200);
 	--bg-darkest: var(--light-background-200);
-	--bg-brand-yellow: var(--light-yellow-500);
-	--bg-brand-yellow-subtlest: var(--light-yellow-150);
-	--bg-brand-blue: var(--light-blue-500);
-	--bg-brand-blue-subtlest: var(--light-blue-150);
+	--bg-brand-yellow: var(--light-brand-yellow-500);
+	--bg-brand-yellow-subtlest: var(--light-brand-yellow-150);
+	--bg-brand-blue: var(--light-brand-blue-500);
+	--bg-brand-blue-subtlest: var(--light-brand-blue-150);
 	--bg-input: var(--light-gray-100);
 	--bg-input-hover: var(--light-gray-200);
 	--bg-info: var(--light-gray-500);

@@ -45,7 +45,7 @@
 
     border-radius: .5rem;
     border: 1px solid var(--border-subtle);
-    background: var(--bg-surface-surface);
+    background: var(--bg-surface);
 }
 
     .cardArticle:hover {
@@ -121,7 +121,7 @@
 
     border-radius: .5rem;
     border: 1px solid var(--border-subtle);
-    background: var(--bg-surface-surface);
+    background: var(--bg-surface);
 
 }
 
@@ -183,7 +183,7 @@
     padding: 16px;
     border-radius: 8px;
     color: var(--text-brand-blue);
-    background: var(--bg-surface-surface);
+    background: var(--bg-surface);
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
