@@ -210,8 +210,12 @@ body {
 	--bg-darker: var(--light-background-200);
 	--bg-darkest: var(--light-background-200);
 	--bg-brand-yellow: var(--light-brand-yellow-500);
+	--bg-brand-yellow-hover: var(--light-brand-yellow-600);
+	--bg-brand-yellow-active: var(--light-brand-yellow-700);
 	--bg-brand-yellow-subtlest: var(--light-brand-yellow-150);
 	--bg-brand-blue: var(--light-brand-blue-500);
+	--bg-brand-blue-hover: var(--light-brand-blue-600);
+	--bg-brand-blue-active: var(--light-brand-blue-700);
 	--bg-brand-blue-subtlest: var(--light-brand-blue-150);
 	--bg-input: var(--light-gray-100);
 	--bg-input-hover: var(--light-gray-200);
