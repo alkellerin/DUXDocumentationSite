@@ -105,17 +105,17 @@
     padding: 8px 16px;
     min-width: 100px;
     color: var(--text-inverse);
-    background-color: var(--bg-gray-gray-bold);
+    background-color: var(--bg-gray-bold);
     text-align: center;
 }
 
     .button-gray:hover {
-        background-color: var(--bg-gray-gray-bold-hover);
+        background-color: var(--bg-gray-bold-hover);
         color: var(--text-inverse);
     }
 
     .button-gray:active {
-        background-color: var(--bg-gray-gray-bold-active);
+        background-color: var(--bg-gray-bold-active);
         color: var(--text-inverse);
     }
  
@@ -129,17 +129,17 @@
     padding: 8px 12px;
     min-width: 100px;
     color: var(--text-inverse);
-    background-color: var(--bg-gray-gray-bold);
+    background-color: var(--bg-gray-bold);
     text-align: center;
 }
 
     .button-gray-small:hover {
-        background-color: var(--bg-gray-gray-bold-hover);
+        background-color: var(--bg-gray-bold-hover);
         color: var(--text-inverse);
     }
 
     .button-gray-small:active {
-        background-color: var(--bg-gray-gray-bold-active);
+        background-color: var(--bg-gray-bold-active);
         color: var(--text-inverse);
     }
 

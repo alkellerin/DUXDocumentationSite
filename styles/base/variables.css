@@ -238,6 +238,16 @@ body {
 	--bg-surface-sunken: var(--light-gray-200);
 	--bg-surface-bold: var(--light-gray-800);
 	--bg-surface-bold-brand: var(--light-blue-900);
+
+	--bg-gray-subtle: var(--light-gray-100);
+	--bg-gray-subtle-hover: var(--light-gray-200);
+	--bg-gray-subtle-active: var(--light-gray-200);
+	--bg-gray-subtler: var(--light-gray-200);
+	--bg-gray-subtler-hover: var(--light-gray-300);
+	--bg-gray-subtler-active: var(--light-gray-400);
+	--bg-gray-bold: var(--light-gray-800);
+	--bg-gray-bold-hover: var(--light-gray-900);
+	--bg-gray-bold-active: var(--light-gray-700);
 }
 
 /* SIZING ------------------------------------------------------------------- */
