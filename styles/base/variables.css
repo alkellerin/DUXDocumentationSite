@@ -114,22 +114,23 @@ body {
     --light-blue-850: #001016;
     --light-blue-900: #000102;
     
-    --light-brand-yellow-100: #FEF5E3;
+    --light-brand-yellow-100: #FFFEFD;
+	--light-brand-yellow-150: #FEF5E3;
     --light-brand-yellow-200: #FEEBC9;
-    --light-brand-yellow-300: #FDE2B0;
-    --light-brand-yellow-400: #FDD996;
-    --light-brand-yellow-500: #FCCF7C;
-    --light-brand-yellow-600: #FBC663;
-    --light-brand-yellow-700: #FBBC49;
-    --light-brand-yellow-800: #FAB32F;
-    --light-brand-yellow-900: #DB9D29;
-    --light-brand-yellow-1000: #BC8723;
-    --light-brand-yellow-1100: #9D711E;
-    --light-brand-yellow-1200: #7E5A18;
-    --light-brand-yellow-1300: #5F4412;
-    --light-brand-yellow-1400: #402E0C;
-    --light-brand-yellow-1500: #211806;
-    --light-brand-yellow-1600: #030201;
+    --light-brand-yellow-250: #FDE2B0;
+    --light-brand-yellow-300: #FDD996;
+    --light-brand-yellow-350: #FCCF7C;
+    --light-brand-yellow-400: #FBC663;
+    --light-brand-yellow-450: #FBBC49;
+    --light-brand-yellow-500: #FAB32F;
+    --light-brand-yellow-550: #DB9D29;
+    --light-brand-yellow-600: #BC8723;
+    --light-brand-yellow-650: #9D711E;
+    --light-brand-yellow-700: #7E5A18;
+    --light-brand-yellow-750: #5F4412;
+    --light-brand-yellow-800: #402E0C;
+    --light-brand-yellow-850: #211806;
+    --light-brand-yellow-900: #030201;
     
     --light-brand-blue-100: #FDFDFE;
     --light-brand-blue-150: #E1E2EC;

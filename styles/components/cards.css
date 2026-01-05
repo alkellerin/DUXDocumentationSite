@@ -421,4 +421,7 @@ td {
 .icon-circle {
     border-radius: 100%;
     background-color: var(--bg-brand-yellow);
+    width: 2rem;
+    height: 2rem;
+    margin: auto;
 }
