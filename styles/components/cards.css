@@ -11,7 +11,7 @@
 
     border-radius: .5rem;
     border: 1px solid var(--border-subtle);
-    background: var(--bg-surface);
+    background-color: var(--bg-default);
 }
 
 .info-card-large {
@@ -26,7 +26,7 @@
 
     border-radius: .5rem;
     border: 1px solid var(--border-subtle);
-    background: var(--bg-surface);
+    background-color: var(--bg-default);
 }
 
 
@@ -45,7 +45,7 @@
 
     border-radius: .5rem;
     border: 1px solid var(--border-subtle);
-    background: var(--bg-surface);
+    background-color: var(--bg-default);
 }
 
     .cardArticle:hover {
@@ -85,7 +85,7 @@
 
     border-radius: .5rem;
     border: 1px solid var(--border-subtle);
-    background: var(--bg-surface);
+    background-color: var(--bg-default);
 
 }
 
@@ -121,7 +121,7 @@
 
     border-radius: .5rem;
     border: 1px solid var(--border-subtle);
-    background: var(--bg-surface);
+    background-color: var(--bg-default);
 
 }
 
@@ -149,10 +149,9 @@
 }
 
 .card-divider {
-    background-color: var(--yellow50) !important;
-    color: var(--blue50) !important;
+    background-color: var(--bg-brand-yellow) !important;
+    color: var(--text-brand-blue) !important;
 }
-
 
 
 /* MAIN INDEX CARDS------------------------------------- */
@@ -166,8 +165,8 @@
     height: 19rem;
     padding: 16px;
     border-radius: 8px;
-    color: var(--text-brand-blue);
-    background: var(--bg-brand-yellow);
+    color: var(--text-inverse);
+    background: var(--bg-success);
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -183,7 +182,7 @@
     padding: 16px;
     border-radius: 8px;
     color: var(--text-brand-blue);
-    background: var(--bg-surface);
+    background: var(--bg-brand-yellow);
     position: relative;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -392,7 +391,7 @@ td {
 }
 
 .dangerPopup {
-    background-color: var(--bg-surface-raised);
+    background-color: var(--bg-default);
     max-width: 416px;
     gap: 8px;
     padding: 1rem;
@@ -414,25 +413,33 @@ td {
 
 /* PLAN SELECT ------------------------------------- */
 .planSelect {
-    border-radius: .5rem;
-    border: var(--border-subtle);
     display: inline-flex;
-    background-color: var(--bg-default);
     align-items: center;
     padding: .5rem;
     gap: .5rem;
-    /* border-left: 8px var(--border-brand-yellow); */
+
+    background-color: var(--bg-default);
+    border-radius: .5rem;
+    border: 1px solid var(--border-subtle);
+    border-left: 8px solid var(--border-brand-yellow);
+
+    cursor: pointer;
+    transition: background-color .3s, transform .2s ease; 
+    transform-origin: left center; 
 }
 
 .icon-circle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 100%;
     background-color: var(--bg-brand-yellow);
     width: 2rem;
     height: 2rem;
-    margin: auto;
-    text-align: center;
 }
 
 .planSelect:hover {
     background-color: var(--bg-brand-yellow);
+    transform: scaleX(1.02);
 }
+

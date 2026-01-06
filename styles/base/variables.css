@@ -7,7 +7,6 @@ body {
 }
 
 :root {
-
 /* PRIMITVES */
 	--light-background-100: #FAFBFF;
 	--light-background-150: #E8ECFF;
@@ -164,8 +163,8 @@ body {
     --text-link-inactive: var(--light-blue-200);
     --text-link-hover: var(--light-blue-700);
     --text-link-active: var(--light-blue-400);
-    --text-brand-blue: var(--light-brand-blue-700);
-    --text-brand-yellow: var(--light-brand-yellow-700);
+    --text-brand-blue: var(--light-brand-blue-500);
+    --text-brand-yellow: var(--light-brand-yellow-500);
     --text-success: var(--light-green-500);
     --text-danger: var(--light-red-500);
     --text-warning: var(--light-yellow-500);
@@ -178,8 +177,8 @@ body {
     --icon-disabled: var(--light-gray-500);
     --icon-inverse: var(--light-gray-100);
     --icon-inverse-subtle: var(--light-gray-300);
-    --icon-brand-blue: var(--light-brand-blue-700);
-    --icon-brand-yellow: var(--light-brand-yellow-700);
+    --icon-brand-blue: var(--light-brand-blue-500);
+    --icon-brand-yellow: var(--light-brand-yellow-500);
     --icon-warning: var(--light-yellow-500);
     --icon-danger: var(--light-red-500);
     --icon-success: var(--light-green-500);
@@ -189,8 +188,8 @@ body {
 	/* BORDER */
 	--border-subtle: var(--light-gray-500);
     --border-bold: var(--light-gray-800);
-    --border-brand-blue: var(--light-brand-blue-700);
-    --border-brand-yellow: var(--light-brand-yellow-700);
+    --border-brand-blue: var(--light-brand-blue-500);
+    --border-brand-yellow: var(--light-brand-yellow-500);
     --border-inverse: var(--light-gray-100);
     --border-info: var(--light-blue-500);
     --border-focus: var(--light-blue-400);
@@ -248,7 +247,6 @@ body {
     --bg-gray-bold: var(--light-gray-800);
     --bg-gray-bold-hover: var(--light-gray-900);
     --bg-gray-bold-active: var(--light-gray-700);
-
 }
 
 /* SIZING ------------------------------------------------------------------- */

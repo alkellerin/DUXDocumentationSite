@@ -61,40 +61,46 @@ p {
     --font-family: "Greycliff CF", sans-serif;
 }
 
-.headingXXXL {
-    font-family: var(--font-family);
-    font-weight: 700;
-    font-size: 60px;
-}
-
 .headingXXL {
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 45px;
+    font-size: 60px;
+    margin: 0;
 }
 
 .headingXL {
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 36px;
+    font-size: 45px;
+    margin: 0;
 }
 
 .headingL {
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 25px;
+    font-size: 36px;
+    margin: 0;
 }
 
 .headingM {
     font-family: var(--font-family);
     font-weight: 700;
-    font-size: 20px;
+    font-size: 25px;
+    margin: 0;
 }
 
 .headingS {
     font-family: var(--font-family);
     font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+}
+
+.headingXS {
+    font-family: var(--font-family);
+    font-weight: 700;
     font-size: 16px;
+    margin: 0;
 }
 
 /* BODY --------------------------------------------------------*/
@@ -102,24 +108,28 @@ p {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 18px;
+    margin: 0;
 }
 
 .bodyM {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 16px;
+    margin: 0;
 }
 
 .bodyS {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 14px;
+    margin: 0;
 }
 
 .bodyXS {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 12px;
+    margin: 0;
 }
 
 /* LINK --------------------------------------------------------*/
@@ -128,6 +138,7 @@ p {
     font-weight: 600;
     font-size: 18px;
     text-decoration: underline;
+    margin: 0;
 }
 
 .linkM {
@@ -135,6 +146,7 @@ p {
     font-weight: 600;
     font-size: 16px;
     text-decoration: underline;
+    margin: 0;
 }
 
 .linkS {
@@ -142,6 +154,7 @@ p {
     font-weight: 600;
     font-size: 14px;
     text-decoration: underline;
+    margin: 0;
 }
 
 /* LABEL --------------------------------------------------------*/
@@ -149,18 +162,21 @@ p {
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 16px;
+    margin: 0;
 }
 
 .labelS {
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 14px;
+    margin: 0;
 }
 
 .labelXS {
     font-family: var(--font-family);
     font-weight: 600;
     font-size: 12px;
+    margin: 0;
 }
 
 /* INPUT --------------------------------------------------------*/
@@ -168,4 +184,5 @@ p {
     font-family: var(--font-family);
     font-weight: 400;
     font-size: 16px;
+    margin: 0;
 }

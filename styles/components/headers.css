@@ -1,3 +1,4 @@
+/* BLUE HEADER W ILLUSTRATION */
 .emblem {
     max-width: 100%;
     height: auto;
@@ -44,4 +45,43 @@
     width: 55%;
     float: right;
 
+}
+
+/* LIGHT HEADER W GRADIENT AND BACKGROUND IMG */
+.heroImage {
+    float: right;
+}
+
+.heroOrbit {
+    height: 375px;
+    background-image: url('https://assets.codepen.io/2146429/hero-background.png');
+    background-repeat: no-repeat;
+    background-size: 60%; 
+    
+}
+
+.heroLeftSection {
+    padding-left: 5rem; 
+    margin: auto;
+}
+
+@media (max-width: 624px) {
+    .heroImage {
+        display: none;
+    }
+    
+    .heroOrbit {
+        height: 400px !important;
+        background-image: none;
+    }
+    
+    .buttongrouping {
+        flex-direction: column;
+    }
+    
+    .heroLeftSection {
+        padding-left: .5rem;
+        margin: 1rem;
+    }
+    
 }
