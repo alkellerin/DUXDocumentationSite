@@ -1,0 +1,43 @@
+.demo {
+    background-color: var(--bg-info-subtlest);
+    border: 1px solid var(--border-link);
+    text-align: center;
+}
+
+.wrapper {
+    max-width: 1440px;
+    margin: auto;
+}
+
+.grid {
+  display: flex;
+  flex-flow: row; 
+  flex-wrap: wrap;
+}
+
+.grid-cell {
+  flex: 1;
+}
+
+/* .Grid--cols-2 > .grid-cell {
+  flex: 0 0 100%; 
+} */
+
+.Grid-full > .Grid-cell {
+  flex: 0 0 100%;
+}
+
+
+/* With gutters */
+.Grid-gutters {
+  margin-left: -1em;
+}
+
+.Grid-gutters .Grid-cell {
+  padding-left: 1em;
+}
+
+
+
+
+
