@@ -1,43 +1,125 @@
-.demo {
-    background-color: var(--bg-info-subtlest);
-    border: 1px solid var(--border-link);
-    text-align: center;
-}
-
 .wrapper {
-    max-width: 1440px;
-    margin: auto;
+  max-width: 1440px;
+  margin: auto;
 }
 
-.grid {
+/* Grid Base */
+.flex-row {
   display: flex;
-  flex-flow: row; 
-  flex-wrap: wrap;
+  flex-flow: row wrap;
+  max-width: 1920px;
 }
 
 .grid-cell {
   flex: 1;
 }
 
-/* .Grid--cols-2 > .grid-cell {
-  flex: 0 0 100%; 
-} */
-
-.Grid-full > .Grid-cell {
-  flex: 0 0 100%;
+/* Demo blocks */
+.demo {
+  padding: .75em;
+  margin-bottom: 1em;
+  background: var(--bg-info-subtlest);
+  border: 1px solid var(--bg-info);
+  border-radius: 3px;
+  transition: background-color 0.3s ease;
+  text-align: center;
 }
 
+.demo:after {
+  display: block;
+  margin-top: .8em;
+  height: 1px;
+}
 
-/* With gutters */
-.Grid-gutters {
+.demo:hover {
+  background: var(--bg-info);
+}
+
+/* Gutters */
+.flex-gutters {
   margin-left: -1em;
 }
 
-.Grid-gutters .Grid-cell {
+.flex-gutters .grid-cell {
   padding-left: 1em;
 }
 
+/* RESPONSIVE COLUMN TEXT */
+/* Mobile*/
+.grid-full > .grid-cell {
+  flex: 0 0 100%;
+}
 
+.flex-col-2 > .grid-cell,
+.flex-col-3 > .grid-cell,
+.flex-col-4 > .grid-cell {
+  flex: 0 0 100%;
+}
 
+.flex-col-6 > .grid-cell {
+  flex: 0 0 calc(50% - 1em);
+}
 
+.flex-col-12 > .grid-cell {
+  flex: 0 0 calc(33.3333% - 1em);
+}
 
+/* Sidebar layouts */
+.flex-1of6 > .grid-cell:first-of-type {
+  flex: 0 0 50%;
+}
+
+.flex-1of4 > .grid-cell:first-of-type,
+.flex-1of3 > .grid-cell:first-of-type {
+  flex: 0 0 100%;
+}
+
+/* Tablet */
+@media (min-width: 30em) {
+  .flex-col-4 > .grid-cell {
+    flex: 0 0 calc(50% - 1em);
+  }
+
+  .flex-col-6 > .grid-cell {
+    flex: 0 0 calc(33.3333% - 1em);
+  }
+
+  .flex-col-12 > .grid-cell {
+    flex: 0 0 calc(16.6666% - 1em);
+  }
+
+  .flex-1of6 > .grid-cell:first-of-type {
+    flex: 0 0 30%;
+  }
+
+  .flex-1of4 > .grid-cell:first-of-type {
+    flex: 0 0 50%;
+  }
+
+  .flex-1of3 > .grid-cell:first-of-type {
+    flex: 0 0 100%;
+  }
+}
+
+/* Desktop */
+@media (min-width: 48em) {
+  .flex-col-2 > .grid-cell,
+  .flex-col-3 > .grid-cell,
+  .flex-col-4 > .grid-cell,
+  .flex-col-6 > .grid-cell,
+  .flex-col-12 > .grid-cell {
+    flex: 1;
+  }
+
+  .flex-1of6 > .grid-cell:first-of-type {
+    flex: 0 0 16.6666%;
+  }
+
+  .flex-1of4 > .grid-cell:first-of-type {
+    flex: 0 0 25%;
+  }
+
+  .flex-1of3 > .grid-cell:first-of-type {
+    flex: 0 0 30%;
+  }
+}

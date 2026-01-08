@@ -4,7 +4,7 @@
 
 /* Layout components */
 @import 'layouts/container.css';
-@import 'layouts/grid.css';
+/* @import 'layouts/grid.css'; */
 @import 'layouts/flexbox.css';
 
 /* UI components */

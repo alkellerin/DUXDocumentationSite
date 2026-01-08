@@ -2,12 +2,9 @@
 .blue-banner {
     background-color: var(--bg-brand-blue);
     color: var(--text-inverse);
-    max-width: none;
-    width: 100%;
 }
 
 .page-info {
-    /* margin: auto; */
     justify-content: center;
     padding: 2.5rem 0rem 2.5rem 9.25rem;
     max-width: 762px;
