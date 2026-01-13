@@ -19,14 +19,14 @@
     max-width: 762px;
 }
 
-.emblem {
+.banner-illustration {
     max-width: 100%;
     height: 18rem;
     float: right;
     padding-top: 1.5rem;
 }
 
-/* WHITE HEADER W IMAGE */
+/* WHITE HEADER W IMAGE AND BACKGROUND IMG */
 .light-banner {
     background-color: var(--bg-default);
     color: var(--text-brand-blue);
@@ -37,76 +37,30 @@
 }
 
 .light-banner-image {
-    width: 100%;
+    height: 100%;
 }
 
-
-
-
-
-.banner-primary-image {
-    mask-image: linear-gradient(to left, black, transparent);
-}
-
-.primary-banner {
-    background-image: linear-gradient(
-      90deg,
-      rgba(255, 255, 255, 0) 15%,
-      rgba(255, 255, 255, 0.95) 85%
-    ), url("../../images/triangles_footer.png");
-    background-repeat: no-repeat;
-    background-position: center left;
-    width: 100%;
-    height: 20vw;
-}
-
-.primary-banner-content {
-    margin: auto;
-    padding-left: 8rem;
-    max-width: 762px;
-}
-
-.banner-primary-image {
-    width: 55%;
-    float: right;
-
-}
-
-/* LIGHT HEADER W GRADIENT AND BACKGROUND IMG */
-.heroImage {
+.banner-image {
     float: right;
 }
 
-.heroOrbit {
-    height: 375px;
-    background-image: url('https://assets.codepen.io/2146429/hero-background.png');
-    background-repeat: no-repeat;
-    background-size: 60%; 
-    
-}
-
-.heroLeftSection {
-    margin: auto;
-    padding-left: 8rem;
-}
-
-@media (max-width: 624px) {
-    .heroImage {
-        display: none;
+    @media (max-width: 624px) {
+        .light-banner-image, .banner-illustration {
+            display: none;
+        }
+        
+        .light-banner {
+            height: 400px !important;
+            background-image: none;
+        }
+        
+        .buttongrouping {
+            flex-direction: column;
+        }
+        
+        .page-info {
+            padding-left: .5rem;
+            margin: 1rem;
+        }
+        
     }
-    
-    .heroOrbit {
-        height: 400px !important;
-        background-image: none;
-    }
-    
-    .buttongrouping {
-        flex-direction: column;
-    }
-    
-    .heroLeftSection {
-        padding-left: .5rem;
-        margin: 1rem;
-    }
-    
-}
