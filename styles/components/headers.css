@@ -5,10 +5,13 @@
 }
 
 .page-info {
+    display: flex;
+    flex-direction: column;
     justify-content: center;
     padding: 2.5rem 0rem 2.5rem 9.25rem;
     max-width: 762px;
     float: left;
+    height: 100%;
 }
 
 .blue-banner-thumbnail {
@@ -21,6 +24,20 @@
     height: 18rem;
     float: right;
     padding-top: 1.5rem;
+}
+
+/* WHITE HEADER W IMAGE */
+.light-banner {
+    background-color: var(--bg-default);
+    color: var(--text-brand-blue);
+
+    background-image: url('https://assets.codepen.io/2146429/hero-background.png');
+    background-repeat: no-repeat;
+    background-size: 60%; 
+}
+
+.light-banner-image {
+    width: 100%;
 }
 
 
