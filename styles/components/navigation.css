@@ -184,11 +184,11 @@
 }
 
     .nav-item.regular:hover {
-        background-color: var(--bg-gray-gray-subtler-hover);
+        background-color: var(--bg-gray-subtler-hover);
     }
 
     .nav-item.regular:active {
-        background-color: var(--bg-gray-gray-subtler-active);
+        background-color: var(--bg-gray-subtler-active);
     }
 
 .nav-item.regular.active {
@@ -211,12 +211,12 @@
 }
 
     .nav-item.sub:hover {
-        background-color: var(--bg-gray-gray-subtler-hover);
+        background-color: var(--bg-gray-subtler-hover);
         color: var(--text-bold);
     }
 
     .nav-item.sub:active {
-        background-color: var(--bg-gray-gray-subtler-active);
+        background-color: var(--bg-gray-subtler-active);
         color: var(--text-bold);
     }
 
