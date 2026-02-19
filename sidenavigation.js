@@ -1,143 +1,117 @@
-let isInitialized = false;
+var navItems = document.querySelectorAll('.nav-item');
+var contentSections = document.querySelectorAll('.content-section');
 
-function initializeNavigation() {
-    if (isInitialized) return;
-    
-    console.log('Initializing navigation...');
-    
-    // Setup sidebar navigation
-    setupSidebar();
-    
-    // Setup horizontal tabs (use event delegation for dynamic content)
-    setupHorizontalTabs();
-    
-    isInitialized = true;
-    console.log('✓ Navigation ready');
-}
-
-function setupSidebar() {
-    const sidebarButtons = document.querySelectorAll('.nav-item[data-tab]');
-    const contentSections = document.querySelectorAll('.content-section');
-    
-    console.log(`Sidebar: ${sidebarButtons.length} buttons, ${contentSections.length} sections`);
-    
-    sidebarButtons.forEach(button => {
-        button.addEventListener('click', function(e) {
-            e.preventDefault();
-            
-            const targetId = this.getAttribute('data-tab');
-            const targetSection = document.getElementById(targetId);
-            
-            if (!targetSection) return;
-            
-            // Hide all sections, show target
-            contentSections.forEach(section => section.classList.add('hidden'));
-            targetSection.classList.remove('hidden');
-            
-            // Update active states
-            sidebarButtons.forEach(btn => btn.classList.remove('active'));
-            this.classList.add('active');
-            
-            console.log(`Switched to: ${targetId}`);
-        });
+function showContent(tabId) {
+    // Hide all content sections
+    contentSections.forEach(function(section) {
+        section.classList.add('hidden');
     });
     
-    // Show initial content
-    const activeButton = document.querySelector('.nav-item.sub.active');
-    if (activeButton) {
-        const initialId = activeButton.getAttribute('data-tab');
-        const initialSection = document.getElementById(initialId);
-        if (initialSection) {
-            contentSections.forEach(section => section.classList.add('hidden'));
-            initialSection.classList.remove('hidden');
+    // Show selected content section
+    var targetSection = document.getElementById(tabId);
+    if (targetSection) {
+        targetSection.classList.remove('hidden');
+    }
+    
+    // Update active states - remove from all
+    navItems.forEach(function(item) {
+        item.classList.remove('active');
+    });
+    
+    // Add active class to clicked item
+    var activeItem = document.querySelector('[data-tab="' + tabId + '"]');
+    if (activeItem) {
+        activeItem.classList.add('active');
+    }
+}
+
+function closeAllDropdowns() {
+    // Find all sub items
+    var allSubItems = document.querySelectorAll('.nav-item.sub');
+    var allDropdownIcons = document.querySelectorAll('.dropdown-arrow');
+    
+    // Close all sub items
+    allSubItems.forEach(function(item) {
+        item.classList.remove('show');
+    });
+    
+    // Reset all dropdown icons
+    allDropdownIcons.forEach(function(icon) {
+        icon.classList.remove('expanded');
+    });
+}
+
+function toggleDropdown(parentTab) {
+    // Find all sub items related to this parent
+    var subItems = document.querySelectorAll('.nav-item.sub[data-parent="' + parentTab + '"]');
+    var dropdownIcon = document.querySelector('[data-tab="' + parentTab + '"] .dropdown-arrow');
+    
+    // Check if dropdown is currently expanded
+    var isExpanded = false;
+    subItems.forEach(function(item) {
+        if (item.classList.contains('show')) {
+            isExpanded = true;
+        }
+    });
+    
+    // Toggle sub items visibility
+    subItems.forEach(function(item) {
+        if (isExpanded) {
+            item.classList.remove('show');
+        } else {
+            item.classList.add('show');
+        }
+    });
+    
+    // Toggle dropdown icon
+    if (dropdownIcon) {
+        if (isExpanded) {
+            dropdownIcon.classList.remove('expanded');
+        } else {
+            dropdownIcon.classList.add('expanded');
         }
     }
 }
 
-function setupHorizontalTabs() {
-    // Use event delegation on document to handle all horizontal tabs
-    document.addEventListener('click', function(e) {
-        const tabButton = e.target.closest('.tab-btn');
-        if (!tabButton) return;
+// Add click event listeners to navigation items
+navItems.forEach(function(item) {
+    item.addEventListener('click', function() {
+        var tabId = this.getAttribute('data-tab');
+        var hasDropdown = this.getAttribute('data-has-dropdown');
+        var isSubItem = this.classList.contains('sub');
         
-        e.preventDefault();
-        e.stopPropagation();
-        
-        const targetId = tabButton.getAttribute('data-tab');
-        console.log(`🔍 Tab button clicked: "${tabButton.textContent.trim()}" -> ${targetId}`);
-        
-        const targetPanel = document.getElementById(targetId);
-        
-        if (!targetPanel) {
-            console.error(`❌ Tab panel "${targetId}" not found!`);
-            return;
-        }
-        
-        console.log(`✓ Found target panel: ${targetId}`);
-        
-        // Find the tab container this button belongs to
-        const tabContainer = tabButton.closest('.tabs');
-        if (!tabContainer) {
-            console.error('❌ No .tabs container found for button');
-            return;
-        }
-        
-        // Get all buttons and panels in THIS tab container only
-        const containerButtons = tabContainer.querySelectorAll('.tab-btn');
-        const containerPanels = tabContainer.querySelectorAll('.tab-panel');
-        
-        console.log(`📊 Container has ${containerButtons.length} buttons and ${containerPanels.length} panels`);
-        
-        // EXPLICIT CSS CONTROL - Force display states directly
-        console.log('🔧 Setting explicit display states...');
-        
-        // Hide all panels and deactivate all buttons in this container
-        containerButtons.forEach(btn => {
-            btn.classList.remove('active');
-        });
-        
-        containerPanels.forEach(panel => {
-            panel.classList.remove('active');
-            panel.style.display = 'none'; // Force hide
-            console.log(`  Hidden panel: ${panel.id}`);
-        });
-        
-        // Show target panel and activate button
-        tabButton.classList.add('active');
-        targetPanel.classList.add('active');
-        targetPanel.style.display = 'block'; // Force show
-        
-        console.log(`  Shown panel: ${targetId}`);
-        
-        // Verify it worked
-        setTimeout(() => {
-            const computedStyle = window.getComputedStyle(targetPanel);
-            const hasActive = targetPanel.classList.contains('active');
-            console.log(`🔍 Final state - Panel ${targetId}: hasActive=${hasActive} display="${computedStyle.display}" inlineStyle="${targetPanel.style.display}"`);
+        if (hasDropdown) {
+            // Close all other dropdowns first
+            var otherDropdowns = document.querySelectorAll('[data-has-dropdown]');
+            otherDropdowns.forEach(function(dropdown) {
+                var dropdownTab = dropdown.getAttribute('data-tab');
+                if (dropdownTab !== tabId) {
+                    // Close this dropdown
+                    var subItems = document.querySelectorAll('.nav-item.sub[data-parent="' + dropdownTab + '"]');
+                    var icon = document.querySelector('[data-tab="' + dropdownTab + '"] .dropdown-arrow');
+                    subItems.forEach(function(sub) {
+                        sub.classList.remove('show');
+                    });
+                    if (icon) {
+                        icon.classList.remove('expanded');
+                    }
+                }
+            });
             
-            if (computedStyle.display === 'none') {
-                console.error(`❌ STILL HIDDEN! Something is overriding our CSS`);
-            } else {
-                console.log(`✅ Panel ${targetId} is now visible`);
+            // Toggle the dropdown
+            toggleDropdown(tabId);
+            // Also show the main content for this section
+            showContent(tabId);
+        } else {
+            // If it's not a sub-item, close all dropdowns
+            if (!isSubItem) {
+                closeAllDropdowns();
             }
-        }, 50);
-        
-        console.log(`✅ Tab activation completed: ${targetId}`);
+            // Regular navigation
+            showContent(tabId);
+        }
     });
-    
-    console.log('✓ Horizontal tabs ready with explicit CSS control');
-}
+});
 
-// Simple initialization - no complex timing needed
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initializeNavigation);
-} else {
-    initializeNavigation();
-}
-
-// Single fallback for any content loaded after initial load
-setTimeout(() => {
-    if (!isInitialized) {
-        initializeNavigation();
-    }
-}, 500);
+// Initialize with first tab active
+showContent('nav1');

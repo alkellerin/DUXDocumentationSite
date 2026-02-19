@@ -1,0 +1,96 @@
+<div class="flex-row flex-gutters flex-1of3">
+    <div class="grid-cell">
+      <div class="sidebarMenu">
+        <div class="sidebarHeader">
+            <p class="headingL">Table of Contents</p>
+        </div>
+        <nav class="nav-menu">
+            <button class="nav-item regular active" data-tab="nav1">
+                <p class="labelM">Nav 1</p>
+            </button>
+            
+            <button class="nav-item regular" data-tab="nav2" data-has-dropdown="true">
+                <p class="labelM">
+                    Nav 2 
+                    <span class="dropdown-arrow"><i class="ph ph-caret-down"></i></span>
+                </p>
+            </button>
+            <button class="nav-item sub" data-tab="sub1" data-parent="nav2">
+                <p class="labelM">Report a Death</p>
+            </button>
+            <button class="nav-item sub" data-tab="sub2" data-parent="nav2">
+                <p class="labelM">Submit Application</p>
+            </button>
+            
+            <button class="nav-item regular" data-tab="nav3">
+                <p class="labelM">Nav 3</p>
+            </button>
+            
+            <button class="nav-item regular" data-tab="nav4" data-has-dropdown="true">
+                <p class="labelM">
+                    Nav 4 
+                    <span class="dropdown-arrow"><i class="ph ph-caret-down"></i></span>
+                </p>
+            </button>
+            <button class="nav-item sub" data-tab="sub3" data-parent="nav4">
+                <p class="labelM">Sub Item 1</p>
+            </button>
+            <button class="nav-item sub" data-tab="sub4" data-parent="nav4">
+                <p class="labelM">Sub Item 2</p>
+            </button>
+            <button class="nav-item sub" data-tab="sub5" data-parent="nav4">
+                <p class="labelM">Sub Item 3</p>
+            </button>
+        </nav>
+      </div>
+    </div>
+
+    <div class="grid-cell">
+      <div class="content-area">
+        <div id="nav1" class="content-section">
+            <h2>Nav 1 Content</h2>
+            <p>This is the content for Nav 1. It's currently active by default.</p>
+        </div>
+        
+        <div id="nav2" class="content-section hidden">
+            <h2>Nav 2 Content</h2>
+            <p>This is the main content for Nav 2. It has sub-items that can be expanded.</p>
+        </div>
+        
+        <div id="sub1" class="content-section hidden">
+            <h2>Report a Death</h2>
+            <p>Content for reporting a death - sub-item under Nav 2.</p>
+        </div>
+        
+        <div id="sub2" class="content-section hidden">
+            <h2>Submit Application</h2>
+            <p>Content for submitting an application - sub-item under Nav 2.</p>
+        </div>
+        
+        <div id="nav3" class="content-section hidden">
+            <h2>Nav 3 Content</h2>
+            <p>This is the content for Nav 3. No sub-items here.</p>
+        </div>
+        
+        <div id="nav4" class="content-section hidden">
+            <h2>Nav 4 Content</h2>
+            <p>This is the main content for Nav 4. It also has expandable sub-items.</p>
+        </div>
+        
+        <div id="sub3" class="content-section hidden">
+            <h2>Sub Item 1</h2>
+            <p>Content for Sub Item 1 under Nav 4.</p>
+        </div>
+        
+        <div id="sub4" class="content-section hidden">
+            <h2>Sub Item 2</h2>
+            <p>Content for Sub Item 2 under Nav 4.</p>
+        </div>
+        
+        <div id="sub5" class="content-section hidden">
+            <h2>Sub Item 3</h2>
+            <p>Content for Sub Item 3 under Nav 4.</p>
+        </div>
+      </div>
+    </div>
+</div>

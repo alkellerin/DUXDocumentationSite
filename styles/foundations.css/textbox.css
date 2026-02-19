@@ -1,0 +1,25 @@
+.textbox {
+    max-width: 780px;
+}
+
+
+/* Size L */
+/* @media (min-width: 64em) {
+    .textbox {
+        max-width: 780px;
+    }
+} */
+
+/* Size M */
+@media (min-width: 48em) {
+    .textbox {
+        max-width: 650px;
+    }
+}
+
+/* Size S */
+@media (min-width: 24.5em) {
+    .textbox {
+        max-width: 520px;
+    }
+}

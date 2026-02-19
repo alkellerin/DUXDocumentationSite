@@ -17,13 +17,17 @@
 @import 'components/navigation.css';
 @import 'components/popups.css';
 
+/* Foundations */
+@import 'foundations/textbox.css';
+
 /* Page-specific styles (minimal) */
 @import 'pages/nav.css';
 @import 'pages/contact.css';
 
 /* Utilities */
 @import 'utilities/spacing.css';
-/* @import 'utilities/text.css'; */
+
+
 
 /* UNIVERSAL DOCUMENTATION STYLES */
 

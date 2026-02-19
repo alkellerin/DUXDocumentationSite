@@ -18,30 +18,72 @@
     </head>
 
     <body>
-        <div class="wrapper">
-            <div class="flex-row flex-gutters flex-1of3">
-                <div class="grid-cell"><div class="demo">
-                    <div class="sidebar">
-                        <div class="sidebar-header">
+        
+        <div class="flex-row flex-gutters flex-1of3">
+            <div class="grid-cell">
+                <div class="sidebar">
+                    <div class="sidebar-header">
                         <p class="headingL">Table of Contents</p>
-                        </div>
-                        <nav class="nav-menu">
-                            <button class="nav-item regular active" data-tab="nav1"><p class="labelM">Nav 1</p></button>
-                            <button class="nav-item regular" data-tab="nav2"><p class="labelM">Nav 2 <i class="ph ph-caret-up icon24"></i></p></button>
-                                <button class="nav-item sub" data-tab="sub1" data-parent="nav2"><p class="labelS">Report a Death</p></button>
-                                <button class="nav-item sub" data-tab="sub2" data-parent="nav2"><p class="labelS">Report a Death</p></button>
-                            <button class="nav-item regular" data-tab="nav3"><p class="labelM">Nav 3</p></button>
-                        </nav>
                     </div>
-                            </div></div>
-                            <div class="grid-cell"><div class="demo">auto</div></div>
-                        </div> 
-        </div>
+                    <nav class="nav-menu">
+                        <button class="nav-item regular active" data-tab="nav1"><p class="labelM">Nav 1</p></button>
+                        <button class="nav-item regular" data-tab="nav2"><p class="labelM">Nav 2 <i class="ph ph-caret-up icon24"></i></p></button>
+                            <button class="nav-item sub" data-tab="sub1" data-parent="nav2"><p class="labelS">Sub Item</p></button>
+                            <button class="nav-item sub" data-tab="sub2" data-parent="nav2"><p class="labelS">Sub Item</p></button>
+                        <button class="nav-item regular" data-tab="nav3"><p class="labelM">Nav 3</p></button>
+                    </nav>
+                </div>
+            </div>
+            <div class="grid-cell">
+                <div id="nav1" class="content-section hidden">
+                    <p class="labelM"><span style="color: var(--text-label);">PERF Employer Guide</span></p>
+                    <p class="headingM"><span style="color: var(--text-brand-blue);">Fund Overview</span></p>
+                
+                    <div class="text-box">
+                        <p class="bodyS">
+                            The Public Employees&#8217; Retirement Fund (PERF) was created on July 1, 1945, to provide retirement and other benefits for state employees and public employees of state and local government entities (political subdivisions). The purpose of PERF is to provide retirement income for the exclusive benefit of eligible employees of participating employers and their designated beneficiaries. Plan benefits are paid from the contributions of participating employers and members plus returns on investment of assets. The PERF Hybrid plan benefit is made of two parts: the defined benefit (DB) and the defined contribution (DC) account. New employees of State of Indiana and local government entities that offer a choice of plans have the option to elect either the PERF Hybrid or My Choice plan. However, members who have prior covered service may be restricted in their choice of plans. State employees who do not elect a plan at hire will default into the PERF Hybrid Plan. This plan election is irrevocable, whether it's by choice or by default.
+                        </p>
+                        </br>
+                        <p class="bodyS">
+                            In this PERF at a Glance guide, you&#8217;ll find basic information and educational resources for members, and/or survivors and beneficiaries of members at various stages. For your personal PERF account information, customized tools, handbooks, and forms please log on to your online account.                        </p>
+                    </div>
+                </div>
+                
+                <div id="nav2" class="content-section hidden"><p>Nav 2 Content</p></div>
+                <div id="sub1" class="content-section hidden"><p>Sub Item 1 Content</p></div>
+                <div id="sub2" class="content-section hidden"><p>Sub Item 2 Content</p></div>
+                <div id="nav3" class="content-section hidden"><p>Nav 3 Content</p></div>
+            
+            </div>
+        </div> 
+        
         
 
-        <script>
+    <script>
+        const allNavItems = document.querySelectorAll('.nav-item'); // Gets both regular and sub
+        const contentSections = document.querySelectorAll('.content-section');
+
+        allNavItems.forEach(item => {
+        item.addEventListener('click', () => {
+            const targetId = item.getAttribute('data-tab');
             
-        </script>
+            // Hide all content sections
+            contentSections.forEach(section => {
+            section.classList.add('hidden');
+            });
+            
+            // Show the selected content section
+            const targetSection = document.getElementById(targetId);
+            if (targetSection) {
+            targetSection.classList.remove('hidden');
+            }
+            
+            // Remove active class from all nav items and add to clicked item
+            allNavItems.forEach(nav => nav.classList.remove('active'));
+            item.classList.add('active');
+        });
+        });
+    </script>
 
         
 
