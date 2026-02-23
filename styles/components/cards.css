@@ -417,6 +417,7 @@ td {
     align-items: center;
     padding: .5rem;
     gap: .5rem;
+    max-width: 17.125rem;
 
     background-color: var(--bg-default);
     border-radius: .5rem;
