@@ -435,8 +435,17 @@ td {
     justify-content: center;
     border-radius: 100%;
     background-color: var(--bg-brand-yellow);
-    width: 2rem;
-    height: 2rem;
+    color: var(--icon-brand-blue);
+    width: 2.25rem;
+    height: 2.25rem;
+}
+
+.icon-circle .ph {
+    font-size: 1.5rem;
+}
+
+.icon-circle .ph-duotone {
+    font-size: 1.5rem;
 }
 
 .planSelect:hover {
