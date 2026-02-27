@@ -293,3 +293,47 @@
     }
 
 /* HORIZONTAL TABS */
+.tab-buttons {
+      background-color: #e7ecff;
+  /*   background-color: var(--bg-darker); */
+      display: flex;
+      gap: 1.5rem;
+      padding: 0 1.5rem;
+      justify-content: center;
+      border-bottom: 2px solid #B1B1B1;
+  /*   border-bottom: 2px solid var(--border-subtle); */
+    }
+
+.tab-btn {
+  background: none;
+  border: none;
+  padding: 12px 0;
+  cursor: pointer;
+/*   transition: all 0.2s ease; */
+  color: #444444;
+  /*   color: var(--text-subtle); */
+  border-bottom: 2px solid transparent;
+      margin-bottom: -2px; /* overlap the container border */
+}
+
+.tab-btn:hover {
+  color: #B1B1B1;
+  border-bottom: 2px solid #B1B1B1;
+/*   border-bottom: 2px solid var(--border-subtle); */
+}
+
+.tab-btn.active {
+  color: #1C2674;
+  font-weight: 700;
+  border-bottom: 2px solid #1C2674;
+/*   border-bottom: 2px solid var(--border-brand-blue); */
+}
+
+.tab-panel {
+      display: none;
+      padding: 1.5rem;
+    }
+
+    .tab-panel.active {
+      display: block;
+    }
