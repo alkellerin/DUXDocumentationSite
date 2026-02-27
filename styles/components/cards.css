@@ -418,6 +418,7 @@ td {
     padding: .5rem;
     gap: .5rem;
     max-width: 17.125rem;
+    min-width: 13.5rem;
 
     background-color: var(--bg-default);
     border-radius: .5rem;
@@ -438,6 +439,8 @@ td {
     color: var(--icon-brand-blue);
     width: 2.25rem;
     height: 2.25rem;
+    flex-shrink: 0;
+    align-self: center; /* stays vertically without stretching */
 }
 
 .icon-circle .ph {
