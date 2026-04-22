@@ -1,0 +1,138 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://use.typekit.net/hbi2boz.css">
+        <link rel="stylesheet" href="../styles/styles.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"/>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/css/foundation.min.css" crossorigin="anonymous">
+
+        <script src="https://unpkg.com/htmlincludejs"></script>
+        
+    </head>
+
+    <body>
+        <div data-include="/topnav.html"></div>
+
+        <div class="flex-row flex-gutters flex-1of3">
+            <div class="grid-cell">
+                <div class="sidebarMenu">
+                    <nav class="nav-menu">
+                        <div class="nav-item regular"><h4>Inputs</h4></div>
+                            <!-- <div class="sub-menu"> -->
+                                <button class="nav-item sub active" data-tab="inputs-buttons"><h3>Buttons</h3></button>
+                                <button class="nav-item sub" data-tab="inputs-checkbox" data-parent="inputs"><h3>Checkbox</h3></button>
+                                <button class="nav-item sub" data-tab="inputs-datepicker" data-parent="inputs"><h3>Datepicker</h3></button>
+                                <button class="nav-item sub" data-tab="inputs-radio" data-parent="inputs"><h3>Radio</h3></button>
+                                <button class="nav-item sub" data-tab="inputs-slider" data-parent="inputs"><h3>Slider</h3></button>
+                                <button class="nav-item sub" data-tab="inputs-textfield" data-parent="inputs"><h3>Text field</h3></button>
+                                <button class="nav-item sub" data-tab="inputs-toggle" data-parent="inputs"><h3>Toggle</h3></button>
+                            <!-- </div> -->
+                        
+                        <div class="nav-item regular"><h4>Content</h4></div>
+                            <div class="sub-menu">
+                                <button class="nav-item sub" data-tab="content-accordion" data-parent="content"><h3>Accordion</h3></button>
+                                <button class="nav-item sub" data-tab="content-avatar" data-parent="content"><h3>Avatar</h3></button>
+                                <button class="nav-item sub" data-tab="content-footer" data-parent="content"><h3>Footer</h3></button>
+                                <button class="nav-item sub" data-tab="content-header" data-parent="content"><h3>Header</h3></button>
+                                <button class="nav-item sub" data-tab="content-menu" data-parent="content"><h3>Menu</h3></button>
+                                <button class="nav-item sub" data-tab="content-navbar" data-parent="content"><h3>Navbar</h3></button>
+                            </div>
+                        
+                        <div class="nav-item regular"><h4>Cards</h4></div>
+                            <div class="sub-menu">
+                                <button class="nav-item sub" data-tab="cards-articleCard" data-parent="content"><h3>Article Card</h3></button>
+                                <button class="nav-item sub" data-tab="cards-dangerCard" data-parent="content"><h3>Danger Card</h3></button>
+                                <button class="nav-item sub" data-tab="cards-fileCard" data-parent="content"><h3>File Card</h3></button>
+                                <button class="nav-item sub" data-tab="cards-indexCard" data-parent="content"><h3>Index Cards</h3></button>
+                                <button class="nav-item sub" data-tab="cards-infoCard" data-parent="content"><h3>Info Cards</h3></button>
+                                <button class="nav-item sub" data-tab="cards-planSelectCard" data-parent="content"><h3>Plan Select Card</h3></button>
+                                <button class="nav-item sub" data-tab="cards-staffCard" data-parent="content"><h3>Staff Card</h3></button>
+                                <button class="nav-item sub" data-tab="cardst-trusteeCard" data-parent="content"><h3>Trustee Card</h3></button>
+                                <button class="nav-item sub" data-tab="cards-videoCard" data-parent="content"><h3>Video Card</h3></button>
+                            </div>
+
+                        <div class="nav-item regular"><h4>Tables</h4></div>
+                            <div class="sub-menu">
+                                <button class="nav-item sub" data-tab="tables-data" data-parent="navigation"><h3>Data Table</p></button>
+                            </div>
+
+                        <div class="nav-item regular" data-tab="navigation"><h4>Navigation</h4></div>
+                            <div class="sub-menu">
+                                <button class="nav-item sub" data-tab="navigation-navbar" data-parent="navigation"><h3>Navbar</h3></button>
+                                <button class="nav-item sub" data-tab="navigation-sidenav" data-parent="navigation"><h3>Side Nav</h3></button>
+                                <button class="nav-item sub" data-tab="navigation-tabs" data-parent="navigation"><h3>Tabs</h3></button>
+                            </div>
+                        <div class="nav-item regular"><h4>Progress & Validation</h4></div>
+                            <div class="sub-menu">
+                                <button class="nav-item sub" data-tab="progress-badge" data-parent="progress"><h3>Badge</h3></button>
+                                <button class="nav-item sub" data-tab="progress-feedback" data-parent="progress"><h3>Feedback</h3></button>
+                                <button class="nav-item sub" data-tab="progress-notification" data-parent="progress"><h3>Notification</h3></button>
+                                <button class="nav-item sub" data-tab="progress-progressbar" data-parent="progress"><h3>Progess Bar</h3></button>
+                            </div>
+                        <div class="nav-item regular"><h4>Surfaces</h4></div>
+                            <div class="sub-menu">
+                                <button class="nav-item sub" data-tab="surfaces-modal" data-parent="surfaces"><h3>Modal</h3></button>
+                                <button class="nav-item sub" data-tab="surfaces-tooltip" data-parent="surfaces"><h3>Tooltip</h3></button>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <!-- <div class="cell medium-6 large-9 selected-content"> -->
+            <div class="grid-cell">
+                <div class="content-area">
+                    <div id="inputs-buttons" class="content-section" data-include="components/inputs/buttons.html"></div>
+                    <div id="inputs-checkbox" class="content-section hidden" data-include="components/inputs/checkbox.html"></div>
+                    <div id="inputs-datepicker" class="content-section hidden" data-include="components/inputs/datepicker.html"></div>
+                    <div id="inputs-radio" class="content-section hidden" data-include="components/inputs/radio.html"></div>
+                    <div id="inputs-slider" class="content-section hidden" data-include="components/inputs/slider.html"></div>
+                    <div id="inputs-textfield" class="content-section hidden" data-include="components/inputs/textfield.html"></div>
+                    <div id="inputs-toggle" class="content-section hidden" data-include="components/inputs/toggle.html"></div>
+
+                    <div id="content-accordion" class="content-section hidden" data-include="components/content/accordion.html"></div>
+                    <div id="content-avatar" class="content-section hidden" data-include="components/content/avatar.html"></div>
+                    <div id="content-cards" class="content-section hidden" data-include="components/content/cards.html"></div>
+                    <div id="content-footer" class="content-section hidden" data-include="components/content/footer.html"></div>
+                    <div id="content-header" class="content-section hidden" data-include="components/content/header.html"></div>
+                    <div id="content-menu" class="content-section hidden" data-include="components/content/menu.html"></div>
+                    
+                    <div id="cards-articleCard" class="content-section hidden" data-include="components/cards/articleCard.html"></div>
+                    <div id="cards-dangerCard" class="content-section hidden" data-include="components/cards/dangerCard.html"></div>
+                    <div id="cards-fileCard" class="content-section hidden" data-include="components/cards/fileCard.html"></div>
+                    <div id="cards-indexCard" class="content-section hidden" data-include="components/cards/indexCards.html"></div>
+                    <div id="cards-infoCard" class="content-section hidden" data-include="components/cards/infoCards.html"></div>
+                    <div id="cards-planSelectCard" class="content-section hidden" data-include="components/cards/planSelectCard.html"></div>
+                    <div id="cards-staffCard" class="content-section hidden" data-include="components/cards/staffCard.html"></div>
+                    <div id="cards-trusteeCard" class="content-section hidden" data-include="components/cards/trusteeCard.html"></div>
+                    <div id="cards-videoCard" class="content-section hidden" data-include="components/cards/videoCard.html"></div>
+
+                    <div id="tables-data" class="content-section hidden" data-include="components/tables/data.html"></div>
+
+                    <div id="navigation-navbar" class="content-section hidden" data-include="components/navigation/navbar.html"></div>
+                    <div id="navigation-sidenav" class="content-section hidden" data-include="components/navigation/sidenav.html"></div>
+                    <div id="navigation-tabs" class="content-section hidden" data-include="components/navigation/tabs.html"></div>
+                
+                    <div id="progress-badge" class="content-section hidden" data-include="components/progress/badge.html"></div>
+                    <div id="progress-feedback" class="content-section hidden" data-include="components/progress/feedback.html"></div>
+                    <div id="progress-notification" class="content-section hidden" data-include="components/progress/notification.html"></div>
+                    <div id="progress-progressbar" class="content-section hidden" data-include="components/progress/progressbar.html"></div>
+                
+                    <div id="surfaces-cards" class="content-section hidden" data-include="components/surfaces/cards.html"></div>
+                    <div id="surfaces-modal" class="content-section hidden" data-include="components/surfaces/modal.html"></div>
+                    <div id="surfaces-tooltip" class="content-section hidden" data-include="components/surfaces/tooltip.html"></div>
+                </div>
+            </div>
+        </div>
+
+        <script src="/javascript/sidenavigation.js" async defer></script>
+        <script src="/javascript/includes.js" async defer></script>
+
+    </body>
+</html>
+

@@ -1,6 +1,8 @@
 .wrapper {
   max-width: 1440px;
   margin: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 /* Grid Base */
@@ -8,10 +10,14 @@
   display: flex;
   flex-flow: row wrap;
   max-width: 1920px;
+  margin-bottom: 1rem;
 }
 
 .grid-cell {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
 }
 
 /* Demo blocks */
@@ -44,47 +50,48 @@
   padding-left: 1em;
 }
 
-/* RESPONSIVE COLUMN TEXT */
-/* Mobile */
+/* Desktop (default) */
 .grid-full > .grid-cell {
   flex: 0 0 100%;
 }
 
 .flex-col-2 > .grid-cell,
 .flex-col-3 > .grid-cell,
-.flex-col-4 > .grid-cell {
-  flex: 0 0 100%;
-}
-
-.flex-col-6 > .grid-cell {
-  flex: 0 0 calc(50% - 1em);
-}
-
+.flex-col-4 > .grid-cell,
+.flex-col-5 > .grid-cell,
+.flex-col-6 > .grid-cell,
 .flex-col-12 > .grid-cell {
-  flex: 0 0 calc(33.3333% - 1em);
+  flex: 1;
 }
 
 /* Sidebar layouts */
 .flex-1of6 > .grid-cell:first-of-type {
-  flex: 0 0 50%;
+  flex: 0 0 16.6666%;
 }
 
-.flex-1of4 > .grid-cell:first-of-type,
+.flex-1of4 > .grid-cell:first-of-type {
+  flex: 0 0 25%;
+}
+
 .flex-1of3 > .grid-cell:first-of-type {
-  flex: 0 0 100%;
+  flex: 0 0 30%;
 }
 
 /* 1/2 + 1/4 + 1/4 mixed row */
 .flex-col-1of2-1of4 > .grid-cell:first-child {
-  flex: 0 0 100%;
+  flex: 0 0 calc(50% - 1em);
 }
 .flex-col-1of2-1of4 > .grid-cell:not(:first-child) {
-  flex: 0 0 calc(50% - 1em);
+  flex: 0 0 calc(25% - 1em);
 }
 
 /* Tablet */
-@media (min-width: 30em) {
+@media (max-width: 48em) {
   .flex-col-4 > .grid-cell {
+    flex: 0 0 calc(50% - 1em);
+  }
+
+  .flex-col-5 > .grid-cell {
     flex: 0 0 calc(50% - 1em);
   }
 
@@ -116,32 +123,39 @@
   }
 }
 
-/* Desktop */
-@media (min-width: 48em) {
+/* Mobile */
+@media (max-width: 30em) {
   .flex-col-2 > .grid-cell,
   .flex-col-3 > .grid-cell,
-  .flex-col-4 > .grid-cell,
-  .flex-col-6 > .grid-cell,
+  .flex-col-4 > .grid-cell {
+    flex: 0 0 100%;
+  }
+
+  .flex-col-4 > .grid-cell {
+    flex: 0 0 100%;
+  }
+
+  .flex-col-6 > .grid-cell {
+    flex: 0 0 calc(50% - 1em);
+  }
+
   .flex-col-12 > .grid-cell {
-    flex: 1;
+    flex: 0 0 calc(33.3333% - 1em);
   }
 
   .flex-1of6 > .grid-cell:first-of-type {
-    flex: 0 0 16.6666%;
+    flex: 0 0 50%;
   }
 
-  .flex-1of4 > .grid-cell:first-of-type {
-    flex: 0 0 25%;
-  }
-
+  .flex-1of4 > .grid-cell:first-of-type,
   .flex-1of3 > .grid-cell:first-of-type {
-    flex: 0 0 30%;
+    flex: 0 0 100%;
   }
 
   .flex-col-1of2-1of4 > .grid-cell:first-child {
-    flex: 0 0 calc(50% - 1em);
+    flex: 0 0 100%;
   }
   .flex-col-1of2-1of4 > .grid-cell:not(:first-child) {
-    flex: 0 0 calc(25% - 1em);
+    flex: 0 0 calc(50% - 1em);
   }
 }
