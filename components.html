@@ -10,9 +10,6 @@
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/regular/style.css"/>
         <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/@phosphor-icons/web@2.1.1/src/fill/style.css"/>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/foundation-sites@6.9.0/dist/css/foundation.min.css" crossorigin="anonymous">
-
-        <script src="https://unpkg.com/htmlincludejs"></script>
-        
     </head>
 
     <body>
@@ -22,69 +19,69 @@
             <div class="grid-cell">
                 <div class="sidebarMenu">
                     <nav class="nav-menu">
-                        <div class="nav-item regular"><h4>Inputs</h4></div>
-                            <!-- <div class="sub-menu"> -->
-                                <button class="nav-item sub active" data-tab="inputs-buttons"><h3>Buttons</h3></button>
-                                <button class="nav-item sub" data-tab="inputs-checkbox" data-parent="inputs"><h3>Checkbox</h3></button>
-                                <button class="nav-item sub" data-tab="inputs-datepicker" data-parent="inputs"><h3>Datepicker</h3></button>
-                                <button class="nav-item sub" data-tab="inputs-radio" data-parent="inputs"><h3>Radio</h3></button>
-                                <button class="nav-item sub" data-tab="inputs-slider" data-parent="inputs"><h3>Slider</h3></button>
-                                <button class="nav-item sub" data-tab="inputs-textfield" data-parent="inputs"><h3>Text field</h3></button>
-                                <button class="nav-item sub" data-tab="inputs-toggle" data-parent="inputs"><h3>Toggle</h3></button>
-                            <!-- </div> -->
+                        <div class="nav-item regular" data-tab="inputs" data-has-dropdown="true">
+                            <h4>Inputs <span class="dropdown-arrow"><i class="ph ph-caret-down"></i></span></h4>
+                        </div>
+                            <button class="nav-item sub active" data-tab="inputs-buttons"><h4>Buttons</h4></button>
+                            <button class="nav-item sub" data-tab="inputs-checkbox" data-parent="inputs"><h4>Checkbox</h4></button>
+                            <button class="nav-item sub" data-tab="inputs-datepicker" data-parent="inputs"><h4>Datepicker</h4></button>
+                            <button class="nav-item sub" data-tab="inputs-radio" data-parent="inputs"><h4>Radio</h4></button>
+                            <button class="nav-item sub" data-tab="inputs-slider" data-parent="inputs"><h4>Slider</h4></button>
+                            <button class="nav-item sub" data-tab="inputs-textfield" data-parent="inputs"><h4>Text field</h4></button>
+                            <button class="nav-item sub" data-tab="inputs-toggle" data-parent="inputs"><h4>Toggle</h4></button>
                         
-                        <div class="nav-item regular"><h4>Content</h4></div>
-                            <div class="sub-menu">
-                                <button class="nav-item sub" data-tab="content-accordion" data-parent="content"><h3>Accordion</h3></button>
-                                <button class="nav-item sub" data-tab="content-avatar" data-parent="content"><h3>Avatar</h3></button>
-                                <button class="nav-item sub" data-tab="content-footer" data-parent="content"><h3>Footer</h3></button>
-                                <button class="nav-item sub" data-tab="content-header" data-parent="content"><h3>Header</h3></button>
-                                <button class="nav-item sub" data-tab="content-menu" data-parent="content"><h3>Menu</h3></button>
-                                <button class="nav-item sub" data-tab="content-navbar" data-parent="content"><h3>Navbar</h3></button>
-                            </div>
+                        <div class="nav-item regular" data-tab="content" data-has-dropdown="true">
+                            <h4>Content <span class="dropdown-arrow"><i class="ph ph-caret-down"></i></span></h4>
+                        </div>
+                            <button class="nav-item sub" data-tab="content-accordion" data-parent="content"><h4>Accordion</h4></button>
+                            <button class="nav-item sub" data-tab="content-avatar" data-parent="content"><h4>Avatar</h4></button>
+                            <button class="nav-item sub" data-tab="content-footer" data-parent="content"><h4>Footer</h4></button>
+                            <button class="nav-item sub" data-tab="content-header" data-parent="content"><h4>Header</h4></button>
+                            <button class="nav-item sub" data-tab="content-menu" data-parent="content"><h4>Menu</h4></button>
+                            <button class="nav-item sub" data-tab="content-navbar" data-parent="content"><h4>Navbar</h4></button>
                         
-                        <div class="nav-item regular"><h4>Cards</h4></div>
-                            <div class="sub-menu">
-                                <button class="nav-item sub" data-tab="cards-articleCard" data-parent="content"><h3>Article Card</h3></button>
-                                <button class="nav-item sub" data-tab="cards-dangerCard" data-parent="content"><h3>Danger Card</h3></button>
-                                <button class="nav-item sub" data-tab="cards-fileCard" data-parent="content"><h3>File Card</h3></button>
-                                <button class="nav-item sub" data-tab="cards-indexCard" data-parent="content"><h3>Index Cards</h3></button>
-                                <button class="nav-item sub" data-tab="cards-infoCard" data-parent="content"><h3>Info Cards</h3></button>
-                                <button class="nav-item sub" data-tab="cards-planSelectCard" data-parent="content"><h3>Plan Select Card</h3></button>
-                                <button class="nav-item sub" data-tab="cards-staffCard" data-parent="content"><h3>Staff Card</h3></button>
-                                <button class="nav-item sub" data-tab="cardst-trusteeCard" data-parent="content"><h3>Trustee Card</h3></button>
-                                <button class="nav-item sub" data-tab="cards-videoCard" data-parent="content"><h3>Video Card</h3></button>
-                            </div>
+                        <div class="nav-item regular" data-tab="cards" data-has-dropdown="true">
+                            <h4>Cards <span class="dropdown-arrow"><i class="ph ph-caret-down"></i></span></h4>
+                        </div>
+                            <button class="nav-item sub" data-tab="cards-articleCard" data-parent="cards"><h4>Article Card</h4></button>
+                            <button class="nav-item sub" data-tab="cards-dangerCard" data-parent="cards"><h4>Danger Card</h4></button>
+                            <button class="nav-item sub" data-tab="cards-fileCard" data-parent="cards"><h4>File Card</h4></button>
+                            <button class="nav-item sub" data-tab="cards-indexCard" data-parent="cards"><h4>Index Cards</h4></button>
+                            <button class="nav-item sub" data-tab="cards-infoCard" data-parent="cards"><h4>Info Cards</h4></button>
+                            <button class="nav-item sub" data-tab="cards-planSelectCard" data-parent="cards"><h4>Plan Select Card</h4></button>
+                            <button class="nav-item sub" data-tab="cards-staffCard" data-parent="cards"><h4>Staff Card</h4></button>
+                            <button class="nav-item sub" data-tab="cardst-trusteeCard" data-parent="cards"><h4>Trustee Card</h4></button>
+                            <button class="nav-item sub" data-tab="cards-videoCard" data-parent="cards"><h4>Video Card</h4></button>
 
                         <div class="nav-item regular"><h4>Tables</h4></div>
                             <div class="sub-menu">
-                                <button class="nav-item sub" data-tab="tables-data" data-parent="navigation"><h3>Data Table</p></button>
+                                <button class="nav-item sub" data-tab="tables-data" data-parent="navigation"><h4>Data Table</p></button>
                             </div>
 
-                        <div class="nav-item regular" data-tab="navigation"><h4>Navigation</h4></div>
-                            <div class="sub-menu">
-                                <button class="nav-item sub" data-tab="navigation-navbar" data-parent="navigation"><h3>Navbar</h3></button>
-                                <button class="nav-item sub" data-tab="navigation-sidenav" data-parent="navigation"><h3>Side Nav</h3></button>
-                                <button class="nav-item sub" data-tab="navigation-tabs" data-parent="navigation"><h3>Tabs</h3></button>
-                            </div>
-                        <div class="nav-item regular"><h4>Progress & Validation</h4></div>
-                            <div class="sub-menu">
-                                <button class="nav-item sub" data-tab="progress-badge" data-parent="progress"><h3>Badge</h3></button>
-                                <button class="nav-item sub" data-tab="progress-feedback" data-parent="progress"><h3>Feedback</h3></button>
-                                <button class="nav-item sub" data-tab="progress-notification" data-parent="progress"><h3>Notification</h3></button>
-                                <button class="nav-item sub" data-tab="progress-progressbar" data-parent="progress"><h3>Progess Bar</h3></button>
-                            </div>
-                        <div class="nav-item regular"><h4>Surfaces</h4></div>
-                            <div class="sub-menu">
-                                <button class="nav-item sub" data-tab="surfaces-modal" data-parent="surfaces"><h3>Modal</h3></button>
-                                <button class="nav-item sub" data-tab="surfaces-tooltip" data-parent="surfaces"><h3>Tooltip</h3></button>
-                            </div>
+                        <div class="nav-item regular" data-tab="navigation" data-has-dropdown="true">
+                            <h4>Navigation <span class="dropdown-arrow"><i class="ph ph-caret-down"></i></span></h4>
                         </div>
+                            <button class="nav-item sub" data-tab="navigation-navbar" data-parent="navigation"><h4>Navbar</h4></button>
+                            <button class="nav-item sub" data-tab="navigation-sidenav" data-parent="navigation"><h4>Side Nav</h4></button>
+                            <button class="nav-item sub" data-tab="navigation-tabs" data-parent="navigation"><h4>Tabs</h4></button>
+                            
+                        <div class="nav-item regular" data-tab="progress" data-has-dropdown="true">
+                            <h4>Progress & Validation <span class="dropdown-arrow"><i class="ph ph-caret-down"></i></span></h4>
+                        </div>
+                            <button class="nav-item sub" data-tab="progress-badge" data-parent="progress"><h4>Badge</h4></button>
+                            <button class="nav-item sub" data-tab="progress-feedback" data-parent="progress"><h4>Feedback</h4></button>
+                            <button class="nav-item sub" data-tab="progress-notification" data-parent="progress"><h4>Notification</h4></button>
+                            <button class="nav-item sub" data-tab="progress-progressbar" data-parent="progress"><h4>Progess Bar</h4></button>
+
+                        <div class="nav-item regular" data-tab="surfaces" data-has-dropdown="true">
+                            <h4>Surfaces <span class="dropdown-arrow"><i class="ph ph-caret-down"></i></span></h4>
+                        </div>
+                            <button class="nav-item sub" data-tab="surfaces-modal" data-parent="surfaces"><h4>Modal</h4></button>
+                            <button class="nav-item sub" data-tab="surfaces-tooltip" data-parent="surfaces"><h4>Tooltip</h4></button>
                     </nav>
                 </div>
             </div>
 
-            <!-- <div class="cell medium-6 large-9 selected-content"> -->
             <div class="grid-cell">
                 <div class="content-area">
                     <div id="inputs-buttons" class="content-section" data-include="components/inputs/buttons.html"></div>
